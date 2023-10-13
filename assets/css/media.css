@@ -1,0 +1,17 @@
+/* ? //////////////////////////      header    ////////////////////
+
+@media only screen and (max-width: 768px) {
+    .navigation{
+  align-items: center;
+
+    }
+  .navigation > .menu-responsiv {
+    display: block;
+  }
+  .nav-ul {
+    display: none;}
+}
+
+
+
+ */
