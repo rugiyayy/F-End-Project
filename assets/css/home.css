@@ -95,7 +95,6 @@ flex-direction: column; */
   background-color: white;
   border-radius: 10px;
   color: black;
-
   display: flex;
   padding: 20px;
   flex-direction: column;
@@ -105,6 +104,7 @@ flex-direction: column; */
 
   padding: 20px 24px;
 }
+
 .search-flights {
   /* border:  1px solid red; */
   display: flex;
@@ -650,7 +650,7 @@ flex-direction: column; */
   padding: 16px 0;
   border-radius: 4px;
   background: #f99a0e;
-  width: 25%;
+  width: 30%;
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -671,7 +671,7 @@ footer {
   align-items: center;
 }
 .footer-info {
-  border-right: 1px solid rgb(16, 136, 225);
+  border-right: 2px solid rgb(16, 136, 225);
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -696,7 +696,7 @@ footer {
 .footer-links {
   width: 100% !important;
   padding-left: 5rem;
-  border-left: 2px solid rgb(16, 136, 225);
+  /* border-left: 2px solid rgb(16, 136, 225); */
 }
 
 .links-row {
@@ -729,7 +729,16 @@ footer {
   font-weight: 300;
 }
 
-/* * ///   till 250 responsive   ///  */
+
+
+
+
+
+
+
+
+/* till 250px  */
+
 
 /* ? header */
 @media only screen and (max-width: 992px) {
@@ -743,10 +752,10 @@ footer {
 }
 @media only screen and (max-width: 768px) {
   .navigation > .menu-responsiv {
-    display: block;
+    display: block !important;
   }
   .nav-ul {
-    display: none;
+    display: none !important;
   }
 
   .logo svg {
@@ -807,6 +816,12 @@ footer {
   .subscribe > button {
     width: 30% !important;
   }
+  .form-title > p {
+    font-size: 14px !important;
+  }
+  .form-title > h4 {
+    font-size: 24px !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -814,12 +829,12 @@ footer {
     padding: 5rem 0 !important;
   }
   .banner-text > h1 {
-    font-size: 50px !important;
-    padding-bottom: 20px;
+    font-size: 40px !important;
+    padding-bottom: 14px;
   }
   .banner-text > p {
-    font-size: 22px !important;
-    line-height: 28px;
+    font-size: 20px !important;
+    /* line-height: 28px; */
   }
 
   .fieldsets input {
@@ -887,7 +902,7 @@ footer {
     padding: 3rem 0 !important;
   }
   .subscribe > button {
-    width: 42% !important;
+    width: 40% !important;
   }
 }
 
@@ -1189,6 +1204,10 @@ footer {
     margin: 0 auto;
   }
 
+
+  /* //////////////// */
+
+
   .form-title > h4 {
     line-height: 22px !important;
     font-size: 16px !important;
@@ -1338,9 +1357,10 @@ footer {
   }
 }
 
+
+
 /* ? footer  */
-@media only screen and (max-width: 1200px) {
-}
+
 @media only screen and (max-width: 992px) {
   .footer-row {
     flex-direction: row !important;
@@ -1373,7 +1393,8 @@ footer {
 @media only screen and (max-width: 576px) {
   .footer-info > p {
     font-size: 14px !important;
-  line-height: 18px;}
+    line-height: 18px;
+  }
   .links-row {
     flex-wrap: wrap;
     row-gap: 20px;
