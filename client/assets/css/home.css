@@ -1,0 +1,1415 @@
+/* @import url(/assets/css/media.css); */
+@import url(/client/assets/css/reset.css);
+@import url(/client/assets/css/grid-col.css);
+
+.container {
+  max-width: 90%;
+  width: 100%;
+  /* width: 1280px; */
+  /* padding: 0 4rem; */
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+header {
+  padding: 16px 0;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.navigation {
+  display: flex;
+  column-gap: 36px;
+  align-items: center;
+}
+.navigation > .menu-responsiv {
+  display: none;
+}
+.nav-ul {
+  display: flex;
+  column-gap: 30px;
+}
+.nav-ul a {
+  color: #1262af;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.notification i {
+  font-size: 20px;
+  color: red;
+}
+
+/* !  BANNER ////////////////////////////////////////////// */
+.banner {
+  background-image: url(/client/assets/pics/search-container@3x.65abc0bda5bf8437be46.png);
+  size: cover;
+  /* background: linear-gradient(79deg, #114F8B -3.12%, #2A9AD7 103.77%); */
+  /* height: 100vh; */
+  width: 100%;
+  margin: 0 auto;
+  min-height: 50vh;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 140px 0;
+  color: white;
+}
+
+.banner-container {
+  width: 75%;
+  margin: 0 auto;
+}
+.banner-text {
+  margin: 24px 0;
+  /* margin-top: 3rem; */
+  /* display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; */
+  /* row-gap: 20px; */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-weight: 400;
+  line-height: 46px;
+  font-size: 24px;
+}
+
+.banner-text > h1,
+.banner-text > p {
+  text-align: center;
+}
+.banner-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.banner-search {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  row-gap: 12px;
+  /* align-self: stretch; */
+
+  padding: 20px 24px;
+}
+
+.search-flights {
+  /* border:  1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-flights h4 {
+  color: #303030;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+.radio-form {
+  /* border: 1px solid red; */
+
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+.return-radio,
+.one-way-radio {
+  display: flex;
+  align-items: center;
+}
+
+.search-details-form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  align-items: flex-end;
+  column-gap: 12px;
+}
+.fieldsets {
+  width: 85%;
+  display: flex;
+  column-gap: 16px;
+}
+.fieldsets fieldset {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #c4c4c4;
+}
+.fieldsets legend {
+  margin: 0 8px;
+  padding: 0 4px;
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.15px;
+  text-align: justify;
+}
+
+.fieldsets input {
+  padding: 12px 16px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+.fieldsets input[type="date"]::-webkit-datetime-edit-text {
+  color: rgb(212, 0, 255);
+  padding: 0 1.3em;
+}
+
+.search-details-form button {
+  height: 52px;
+  display: inline-block;
+  padding: 0 4px;
+  width: 20%;
+  border-radius: 4px;
+  background-color: #f99a0f;
+  color: white;
+  text-align: center;
+
+  font-family: "Roboto", sans-serif;
+
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.46px;
+}
+
+/*!     section recent flights////////////////////////////////////////////////////////////////////// */
+
+#recent-searchs {
+  padding-top: 4rem;
+}
+
+.recent-seacrh-title {
+  color: #303030;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 12px;
+  font-size: 16px;
+  letter-spacing: 0.72px;
+}
+
+.recent-flights-row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.recent-flight {
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+  width: calc(100% / 2 - 16px);
+  padding: 24px;
+}
+
+.from-to {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.from-to p {
+  color: #1262ae;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  text-transform: capitalize;
+}
+.destination-icons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.plane {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.depart-on {
+  margin-top: 20px;
+  text-align: center;
+
+  color: #000;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 20px;
+
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+}
+
+.depart-on b {
+  font-weight: 700;
+}
+.depart-on span {
+  font-weight: 400;
+}
+
+/* ! ///////////////////////////////////      trip */
+
+.prepare-trip {
+  margin: 36px 0;
+}
+.prepare-trip-span {
+  color: #cecece;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.trip-menu {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.trip-menu-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  text-align: center;
+}
+
+.trip-menu-box > span {
+  color: #8e8e94;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+}
+
+.next-trip {
+  text-align: start;
+}
+.next-trip > span {
+  color: #1262ae;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.72px;
+}
+
+/*? ////////////////////// */
+
+.popular-destinations > h4 {
+  color: #303030;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.destinations-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.destination-box {
+  padding: 0 16px;
+  width: 25%;
+}
+.destination-box img {
+  width: 100%;
+  border-radius: 8px;
+  vertical-align: bottom;
+}
+.destionation-details {
+  position: relative;
+}
+.destionation-details span {
+  position: absolute;
+  color: white;
+}
+.destionation-details > .city {
+  /* ??   top left right  */
+  position: absolute;
+
+  top: 12px;
+  left: 16px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.destionation-details > .span_from {
+  top: 12px;
+  right: 16px;
+
+  color: #fff;
+  text-align: right;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.64px;
+}
+
+.destionation-details > .price {
+  top: 28px;
+  right: 8px;
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+/* ? //////////////////////////////// */
+.holidays {
+  margin: 44px 0;
+}
+.holidays > h4 {
+  color: #303030;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.holidays-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.holiday-box {
+  padding: 0 16px;
+  width: 25%;
+}
+.holiday-box img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  vertical-align: bottom;
+}
+
+.holiday-box 
+
+.holiday-details {
+  padding: 20px 16px;
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.holiday-city-dateils {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 75%;
+  font-family: "Roboto", sans-serif;
+}
+.holiday-city-dateils > .city {
+  color: #424242;
+  font-weight: 500;
+  font-size: 20px;
+}
+.holiday-city-dateils > .span_code {
+  color: #999;
+  font-size: 16px;
+  font-weight: 400;
+}
+.holiday-details > .price {
+  align-self: stretch;
+  /* width: 25%; */
+  color: #1262af;
+  /* text-align: right; */
+  font-family: "Baloo Bhai 2", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/*?           POPULAR-STAYS----HOTELSSS */
+
+.popular-stays {
+  margin: 44px 0;
+}
+
+.stays-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stays-title {
+  color: #303030;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+.view-all {
+  color: #1262ae;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.72px;
+}
+
+.hotels-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  margin: 16px 0;
+}
+
+.hotels-card {
+  border: 1px solid;
+  width: calc(25% - 16px);
+  padding: 16px 12px;
+  border-radius: 0px 0px 10px 10px;
+  border: 1px solid #eaeaea;
+}
+.hotels-card img {
+  margin-bottom: 24px;
+  width: 100%;
+  border-radius: 10px;
+  vertical-align: bottom;
+}
+
+.stay-details {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  /* align-items: center; */
+  row-gap: 24px;
+}
+.hotel-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  width: 75%;
+  font-family: "Roboto", sans-serif;
+}
+
+.hotel-details > .room-type {
+  color: #8e8e94;
+
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+}
+
+.hotel-details > .suite {
+  color: #303030;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.88px;
+  text-transform: capitalize;
+}
+
+.hotel-details > .price {
+  color: #303030;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.72px;
+}
+
+.rating-details {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  display: flex;
+  column-gap: 16px;
+}
+
+.rating-details > .rating {
+  color: #303030;
+  font-weight: 500;
+}
+.rating-details > .rating > i {
+  -webkit-text-fill-color: #fdbf00;
+}
+
+.rating-details > review {
+  color: #1262af;
+  font-weight: 400;
+}
+
+.stay-details > .btn-hotel-dtl {
+  border-radius: 4px;
+  border: 1px solid #ccdcec;
+  background-color: white;
+  color: #1262af;
+  font-family: "Roboto", sans-serif;
+
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* ! ///////////////////////////////////      SUBSCRIBE */
+
+#subscribe {
+  margin-top: 30px;
+  background-image: url(/client/assets/pics/Subscribe\ section\ background.png);
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.container-subscribe {
+  /* width: 600px; */
+  width: 40%;
+
+  padding: 4rem 0;
+  margin: 0 auto;
+}
+
+.form-title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+  text-transform: uppercase;
+  line-height: 32px;
+}
+
+.form-title > p {
+  color: #1262ae;
+  font-size: 16px;
+}
+
+.form-title > h4 {
+  color: #434343;
+  font-size: 28px;
+}
+
+.subscribe {
+  border-radius: 12px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.03);
+  margin: 2rem 0;
+  background-color: white;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.subscribe label {
+  color: #576074;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+.subscribe input {
+  padding: 16px 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.subscribe > button {
+  padding: 16px 0;
+  border-radius: 4px;
+  background: #f99a0e;
+  width: 30%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+/* ! foooterr */
+
+footer {
+  background: linear-gradient(92deg, #0b5ba8 30.91%, #299bd8 100.98%);
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-row {
+  display: flex;
+  align-items: center;
+}
+.footer-info {
+  border-right: 2px solid rgb(16, 136, 225);
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-right: 5rem !important;
+}
+
+.footer-info > p {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.social-media {
+  display: flex;
+  column-gap: 20px;
+}
+.social-media > a {
+  color: white;
+  font-size: 24px;
+}
+
+.footer-links {
+  width: 100% !important;
+  padding-left: 5rem;
+  /* border-left: 2px solid rgb(16, 136, 225); */
+}
+
+.links-row {
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* column-gap: 90px; */
+}
+.links > h4 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.links > ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+.links > ul > li {
+  width: 100%;
+}
+.links li > a {
+  width: 100%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+/* till 250px  */
+
+
+/* ? header */
+@media only screen and (max-width: 992px) {
+  .navigation {
+    column-gap: 16px;
+  }
+
+  .logo svg {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navigation > .menu-responsiv {
+    display: block !important;
+  }
+  .nav-ul {
+    display: none !important;
+  }
+
+  .logo svg {
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navigation {
+    column-gap: 10px;
+  }
+
+  .logo svg {
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 385px) {
+  .navigation {
+    column-gap: 8px;
+  }
+
+  .logo svg {
+    width: 100px;
+  }
+}
+
+/* ? manin  */
+
+@media only screen and (max-width: 1200px) {
+  .fieldsets input {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .fieldsets input[type="date"]::-webkit-datetime-edit-text {
+    padding: 0 1em;
+  }
+
+  .search-details-form > button {
+    display: inline-block;
+    height: 42px;
+
+    font-size: 12px;
+    padding: 0 4px;
+    letter-spacing: 0.4px;
+  }
+
+  /*  * //// section 1  part 2  next trip planning */
+  .destionation-details > .price {
+    font-size: 32px !important;
+  }
+  .holiday-details > .price {
+    font-size: 30px !important;
+  }
+
+  /* * last section */
+
+  .subscribe > button {
+    width: 30% !important;
+  }
+  .form-title > p {
+    font-size: 14px !important;
+  }
+  .form-title > h4 {
+    font-size: 24px !important;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .banner {
+    padding: 5rem 0 !important;
+  }
+  .banner-text > h1 {
+    font-size: 40px !important;
+    padding-bottom: 14px;
+  }
+  .banner-text > p {
+    font-size: 20px !important;
+    /* line-height: 28px; */
+  }
+
+  .fieldsets input {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .fieldsets input[type="date"]::-webkit-datetime-edit-text {
+    padding: 0 0.4em;
+  }
+
+  .search-details-form > button {
+    height: 38px;
+    font-size: 10px;
+    width: 20%;
+  }
+
+  /* * ////////  section 1 */
+  .from-to p {
+    font-size: 20px !important;
+  }
+  .depart-on {
+    font-size: 18px !important;
+  }
+
+  /*  * //// section 1  part 2  next trip planning */
+  .destionation-details > .price {
+    top: 16px !important;
+    right: 4px !important;
+    font-size: 28px !important;
+  }
+  .destionation-details > .span_from {
+    top: 8px !important;
+    right: 8px !important;
+    font-size: 12px !important;
+  }
+
+  .destionation-details > .city {
+    top: 8px !important;
+    left: 8px !important;
+    font-size: 16px !important;
+  }
+
+  .holiday-details {
+    padding: 16px 8px !important;
+  }
+  .holiday-city-dateils > .city {
+    font-size: 18px !important;
+  }
+  .holiday-city-dateils > .span_code {
+    font-size: 12px !important;
+  }
+  .holiday-details > .price {
+    font-size: 24px !important;
+  }
+  .rating-details {
+    align-items: center;
+  }
+  .rating-details > .rating {
+    width: 100%;
+  }
+
+  /* * last section */
+  .container-subscribe {
+    padding: 3rem 0 !important;
+  }
+  .subscribe > button {
+    width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    padding: 3rem 0 !important;
+  }
+  .banner-search {
+    row-gap: 16px;
+  }
+  .banner-text > h1 {
+    font-size: 40px !important;
+    padding-bottom: 20px;
+  }
+  .banner-text > p {
+    font-size: 20px !important;
+    line-height: 28px;
+  }
+
+  .search-flights {
+    width: 84% !important;
+    margin: 0 auto;
+  }
+
+  .search-details-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+  }
+  .fieldsets {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+  }
+
+  .fieldsets input {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .fieldsets input[type="date"]::-webkit-datetime-edit-text {
+    padding: 0 0.9em;
+  }
+
+  .search-details-form > button {
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px;
+    width: 35%;
+    height: 46px;
+  }
+
+  /** //////////// section 1 */
+  .recent-flight {
+    padding: 16px !important;
+  }
+  .from-to p {
+    font-size: 16px !important;
+  }
+  .destination-icons svg {
+    height: 20px;
+  }
+  .depart-on {
+    font-size: 16px !important;
+  }
+
+  /** //////////// section 2             prepare trip part  */
+  .prepare-trip {
+    text-align: center;
+  }
+  .prepare-trip-span {
+    font-size: 18px !important;
+  }
+  .trip-menu {
+    margin-top: 20px !important;
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+  .trip-menu-box {
+    width: calc(100% / 3) !important;
+    align-items: center;
+  }
+
+  /*  * //// section 1  part 2  next trip planning */
+  .next-trip > span {
+    font-size: 12px !important;
+  }
+  .popular-destinations > h4 {
+    font-size: 22px !important;
+    width: 50% !important;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .holidays > h4 {
+    width: 50% !important;
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .destination-box {
+    width: 50% !important;
+  }
+
+  .destinations-row {
+    row-gap: 12px;
+  }
+  .destionation-details > .city {
+    font-size: 24px !important;
+    left: 16px !important;
+    top: 16px !important;
+  }
+  .destionation-details > .span_from {
+    top: 16px !important;
+    right: 16px;
+    font-size: 16px !important;
+  }
+  .destionation-details > .price {
+    top: 36px !important;
+    right: 12px;
+    font-size: 32px !important;
+  }
+  .holidays-row {
+    row-gap: 12px;
+  }
+  .holiday-box {
+    width: 50% !important;
+  }
+  .holiday-details {
+    padding: 20px 16px !important;
+  }
+
+  .holiday-city-dateils > .city {
+    font-size: 24px !important;
+  }
+  .holiday-city-dateils > .span_code {
+    font-size: 16px !important;
+  }
+  .holiday-details > .price {
+    font-size: 28px !important;
+  }
+
+  .rating-details {
+    align-items: center;
+  }
+  .rating-details > .rating {
+    width: 100%;
+  }
+  .rating-details .review {
+    width: 100% !important;
+  }
+
+  .stays-header {
+    flex-direction: column;
+    row-gap: 4px;
+  }
+
+  .stays-title {
+    margin: 0 auto !important;
+    text-align: center;
+  }
+  .view-all {
+    font-size: 12px !important;
+  }
+
+  .hotels-row {
+    gap: 12px !important;
+  }
+  .hotels-card {
+    width: calc(50% - 12px) !important;
+  }
+  .stay-details {
+    row-gap: 10px !important;
+  }
+
+  /* * last section */
+  .container-subscribe {
+    width: 50% !important;
+    padding: 2rem 0 !important;
+  }
+  .subscribe {
+    margin: 1rem 0 !important;
+  }
+  .form-title > p {
+    margin-bottom: 8px;
+    line-height: 22px !important;
+    font-size: 14px !important;
+  }
+  .form-title > h4 {
+    line-height: 32px !important;
+    font-size: 24px !important;
+  }
+  .subscribe > button {
+    width: 100% !important;
+  }
+
+  .subscribe input {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .banner {
+    padding: 2rem 0 !important;
+  }
+  .banner-text > h1 {
+    font-size: 32px !important;
+    line-height: 40px;
+    padding-bottom: 20px;
+  }
+  .banner-text > p {
+    font-size: 16px !important;
+    line-height: 24px;
+  }
+
+  .banner-search {
+    padding: 12px;
+    row-gap: 8px;
+  }
+
+  /* //// */
+
+  .search-flights {
+    flex-direction: column;
+    row-gap: 8px;
+  }
+  .search-flights > h4 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .radio-form {
+    font-size: 12px;
+  }
+
+  .search-details-form > button {
+    font-size: 12px;
+    width: 60%;
+  }
+
+  /** //////////// section 1 */
+  .recent-flights-row {
+    flex-direction: column;
+  }
+  .recent-flight {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+  .recent-seacrh-title {
+    margin-bottom: 14px !important;
+  }
+  .from-to p {
+    font-size: 20px !important;
+  }
+  .destination-icons svg {
+    height: 24px;
+  }
+  .depart-on {
+    font-size: 20px !important;
+  }
+
+  /** //////////// section 2             prepare trip part  */
+
+  .trip-menu-box {
+    width: calc(100% / 2) !important;
+  }
+
+  /*  * //// section 1  part 2  next trip planning */
+  .popular-destinations {
+    margin-top: 12px;
+  }
+  .popular-destinations > h4 {
+    font-size: 22px !important;
+  }
+  .destinations-row {
+    margin: 2px 0 !important;
+  }
+  .destination-box {
+    width: 80% !important;
+    padding: 8px 20px !important;
+    margin: 0 auto;
+  }
+
+  .holidays > h4 {
+    font-size: 22px !important;
+  }
+
+  .holiday-box {
+    width: 80% !important;
+    padding: 0px 20px !important;
+    margin: 0 auto;
+  }
+
+  .stays-title {
+    font-size: 22px !important;
+  }
+
+  .hotels-card {
+    width: 80% !important;
+    padding: 8px 20px !important;
+    margin: 0 auto;
+  }
+
+
+  /* //////////////// */
+
+
+  .form-title > h4 {
+    line-height: 22px !important;
+    font-size: 16px !important;
+  }
+  .form-title > p {
+    line-height: 18px !important;
+    font-size: 12px !important;
+  }
+
+  .container-subscribe {
+    padding: 1rem 0 !important;
+    width: 80% !important;
+  }
+  .subscribe input {
+    padding: 12px !important;
+  }
+  .subscribe button {
+    padding: 12px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .banner {
+    padding: 1rem 0;
+  }
+  .banner-text > h1 {
+    font-size: 24px !important;
+    line-height: 28px;
+    padding-bottom: 12px;
+  }
+  .banner-text > p {
+    font-size: 10px !important;
+    line-height: 16px;
+  }
+
+  .banner-search {
+    padding: 10px;
+    row-gap: 4px;
+  }
+
+  .search-flights {
+    row-gap: 4px;
+  }
+  .search-flights > h4 {
+    font-size: 14px;
+  }
+
+  .radio-form {
+    font-size: 10px;
+    column-gap: 4px;
+  }
+  .fieldsets input[type="date"]::-webkit-datetime-edit-text {
+    padding: 0 0.3em;
+  }
+  /* ! ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  .fieldsets input {
+    font-size: 12px;
+  }
+  .fieldsets legend {
+    font-size: 8px;
+  }
+  .search-details-form > button {
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 600;
+    width: 60%;
+    height: 40px;
+  }
+
+  /** //////////// section 1 */
+
+  .recent-flight {
+    padding: 8px !important;
+  }
+  .recent-seacrh-title {
+    font-size: 10px;
+  }
+  .from-to p {
+    font-size: 16px !important;
+  }
+  .destination-icons svg {
+    height: 14px;
+  }
+  .depart-on {
+    font-size: 14px !important;
+  }
+
+  /*  * //// section 1  part 2  next trip planning */
+  .popular-destinations > h4 {
+    font-size: 16px !important;
+  }
+  .destionation-details > .price {
+    top: 28px !important;
+    right: 16px;
+    font-size: 20px !important;
+  }
+  .destionation-details > .city {
+    font-size: 16px !important;
+    left: 12px !important;
+    top: 8px !important;
+  }
+  .destionation-details > .span_from {
+    top: 10px !important;
+    right: 12px !important;
+    font-size: 12px !important;
+  }
+
+  .holidays > h4 {
+    font-size: 16px !important;
+  }
+  .holiday-city-dateils > .city {
+    font-size: 16px !important;
+  }
+  .holiday-city-dateils > .span_code {
+    font-size: 12px !important;
+  }
+  .holiday-details > .price {
+    font-size: 20px !important;
+  }
+
+  .stays-title {
+    font-size: 16px !important;
+  }
+  .rating-details {
+    font-size: 12px !important;
+  }
+
+  /* * //////////// section 3  */
+  .container-subscribe {
+    padding: 1rem 0 !important;
+    width: 80% !important;
+  }
+
+  .subscribe input {
+    font-size: 12px !important;
+  }
+
+  .subscribe input {
+    font-size: 10px !important;
+  }
+
+  .subscribe input {
+    padding: 8px 8px !important;
+  }
+  .subscribe label {
+    font-size: 12px !important ;
+  }
+}
+
+
+
+/* ? footer  */
+
+@media only screen and (max-width: 992px) {
+  .footer-row {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    row-gap: 20px !important;
+  }
+
+  .footer-info {
+    padding: 0 !important;
+    width: 100%;
+    row-gap: 20px !important;
+    border: none !important;
+  }
+  .footer-info > p {
+    font-size: 16px !important;
+  }
+  .footer-links {
+    border: none;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .links > h4 {
+    font-size: 18px !important;
+  }
+  .links > ul > li > a {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .footer-info > p {
+    font-size: 14px !important;
+    line-height: 18px;
+  }
+  .links-row {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+  .links {
+    width: 50% !important;
+  }
+  .links > h4 {
+    font-size: 16px !important;
+  }
+  .links > ul > li > a {
+    font-size: 12px !important;
+  }
+}
+@media only screen and (max-width: 320px) {
+}
