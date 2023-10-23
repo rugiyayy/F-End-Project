@@ -107,3 +107,80 @@ async function ListHotelsPop() {
     alert(error);
   }
 }
+
+/////////////////////////////////////////////////////////////////////
+
+let searchDetailsForm = document.querySelector(".search-details-form");
+
+searchDetailsForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let departure = document.querySelector(".departure-inp").value;
+  let arrival = document.querySelector(".arrival-inp").value;
+  let date = document.querySelector(".date-inp").value;
+
+  let queryParams = `?departure=${encodeURIComponent(
+    departure
+  )}&arrival=${encodeURIComponent(arrival)}&date=${encodeURIComponent(date)}`;
+
+  let searchUrl = `search.html${queryParams}`;
+  window.location.href = searchUrl;
+});
+
+/////////////////////////////////////////////////////
+
+let returnRadio = document.querySelector(".return-radio");
+let oneWay = document.querySelector(".one-way-radio");
+let fieldsetInput = document.querySelector(".fieldsets.fieldset-return");
+let leftRightIcon = document.querySelector(".fa-solid.fa-right-left");
+
+returnRadio.addEventListener("click", function () {
+  fieldsetInput.classList.remove("fieldset-return");
+  leftRightIcon.style.display = "inline-block";
+});
+
+oneWay.addEventListener("click", function () {
+  fieldsetInput.classList.add("fieldset-return");
+  leftRightIcon.style.display = "none";
+});
+
+window.addEventListener("scroll", function () {
+  var header = document.getElementById("header");
+  var navA = document.querySelectorAll(".nav-a");
+  var notSuper = document.querySelector(".notSuper");
+  var gradient = document.getElementById("paint0_linear_1_1292");
+
+  if (window.scrollY >= 200) {
+    header.style.backgroundColor = "#15436e";
+    notSuper.style.color = "white";
+    gradient.children[0].setAttribute("stop-color", "white");
+    gradient.children[1].setAttribute("stop-color", "white");
+    navA.forEach(function (link) {
+      link.style.color = "white";
+    });
+  } else {
+    header.style.backgroundColor = "white";
+    notSuper.style.color = "#1262af";
+
+    gradient.children[0].setAttribute("stop-color", "#299BD8");
+    gradient.children[1].setAttribute("stop-color", "#1262AF");
+    navA.forEach(function (link) {
+      link.style.color = "#1262af";
+    });
+  }
+});
+
+
+
+// ! nav
+
+let respMenu = document.querySelector(".menu-responsiv");
+let nav = document.querySelector(".nav");
+
+respMenu.addEventListener("click", function() {
+  if (nav.style.display === "block") {
+    nav.style.display = "none";
+} else {
+    nav.style.display = "block";
+}
+});

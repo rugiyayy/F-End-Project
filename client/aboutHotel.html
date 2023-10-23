@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FICKLE FLIGHT</title>
-    <link rel="stylesheet" href="./assets/css/hotel.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/aboutHotel.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -12,24 +12,42 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <!--! //////////// HEADER///////////////////////// -->
+    <div class="banner">
+      <div class="banner-container">
+        <h1 class="banner-title">Booking Hotel</h1>
+        <div class="banner-booking">
+          <form class="booking-details-form" action="">
+            <div class="fieldsets">
+              <fieldset class="date-fieldset">
+                <legend>Check In Date:</legend>
+                <input required type="date" name="date" class="date-inp" />
+              </fieldset>
 
-  <header id="header">
-    <a href="./aboutHotel.html"></a>
+              <fieldset>
+                <legend>Check Out Date:</legend>
+                <input required type="date" name="date" class="date-inp" />
+              </fieldset>
+
+              <fieldset>
+                <legend>Rooms</legend>
+                <input
+                  required
+                  type="text"
+                  name="departure"
+                  class="departure-inp"
+                />
+              </fieldset>
+            </div>
+
+            <button type="submit">Booking</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <header id="header">
       <div class="container">
         <div class="header-row">
           <div class="logo">
@@ -68,75 +86,137 @@
             <nav class="nav">
               <ul class="nav-ul">
                 <li><a class="nav-a" href="./home.html">Explore</a></li>
-                <li><a  class="nav-a" href="./search.html">Search</a></li>
-                <li><a  class="nav-a" href="./hotels.html">Hotels</a></li>
+                <li><a class="nav-a" href="./search.html">Search</a></li>
+                <li><a class="nav-a" href="./hotels.html">Hotels</a></li>
               </ul>
             </nav>
-            <i class="fa-solid fa-bars  menu-responsiv"></i>
+            <i class="fa-solid fa-bars menu-responsiv"></i>
             <div class="notification">
-              <a href="hotels.html#wishlist"><i class="fa-solid fa-heart"></i><sup class="notSuper">0</sup></a>
+              <a href="hotels.html#wishlist"
+                ><i class="fa-solid fa-heart"></i
+                ><sup class="notSuper">0</sup></a
+              >
             </div>
           </div>
         </div>
       </div>
     </header>
 
-    <!--!  BANNER ///////////////////////////////////////////////////////////// -->
-
-    <div class="banner">
-      <div class="banner-container">
-        <h1 class="banner-title">Stays in Los Angeles</h1>
-        <div class="banner-options">
-          <button class="recommended-filt option">Recommended</button>
-          <button class="price-filt option">Price</button>
-          <button class="rating-filt option">Rating</button>
-        </div>
-      </div>
-    </div>
-
-    <!--!  MAIN ///////////////////////////////////////////////////////////// -->
-
     <main>
-      <section id="hotel-result">
+      <section class="room">
         <div class="container">
-          <div class="hotel-result-text">
-            <p><span class="result-quantity">200+</span> results</p>
-            <div class="filter">
-              <span> Filters</span>
-              <i class="fa-solid fa-sliders"></i>
-            </div>
-          </div>
-          <div class="hotels">
-            <div class="hotel-row"></div>
-
-            <div class="mapouter">
-              <div class="gmap_canvas">
-                <iframe
-                  class="gmap_iframe"
-                  width="100%"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0"
-                  src="https://maps.google.com/maps?width=204&amp;height=691&amp;hl=en&amp;q=code&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                ></iframe
-                ><a href="https://connectionsgame.org/"
-                  >Connections Unlimited</a
-                >
-              </div>
+          <div class="room-row">
+            <img class="room-img" src="./assets/pics/img1.jpg" alt="" />
+            <div class="room-text">
+              <h3>Luxury Rooms</h3>
+              <ul>
+                <li>
+                  <i class="fas fa-arrow-alt-circle-right"></i>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li>
+                  <i class="fas fa-arrow-alt-circle-right"></i>
+                  Lorem ipsum dolor sit amet.
+                </li>
+                <li>
+                  <i class="fas fa-arrow-alt-circle-right"></i>
+                  Lorem ipsum dolor sit amet.
+                </li>
+              </ul>
+              <p class="room-info">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Repellat assumenda explicabo obcaecati, minus voluptas veritatis
+                quisquam quis qui tempora dolores soluta tenetur est magni
+                asperiores modi doloremque ut impedit odit iusto quam nisi iure
+                reprehenderit! Dolore odio voluptatem, perferendis provident eos
+                repellendus tempore eligendi ullam officia corrupti ipsa,
+                tenetur, amet asperiores repudiandae est quia.
+              </p>
+              <p class="price"><span>$699 /</span> Per Night</p>
+              <button class="book-btn" type="button" class="btn">
+                Book Now
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <div id="wishlist">
-        <h2>Wishlist</h2>
-        <i class="fa-solid fa-xmark"></i>
-        <p id="emptyMessage">EMPTY</p>
-      </div>
-    </main>
+      <section class="services sec-width" id="services">
+        <div class="container">
+          <h2 class="title"> Our Services</h2>
 
-    <!-- ! footer -->
+          <div class="services-container">
+            <article class="service">
+              <i class="fa-solid fa-utensils service-icon"></i>
+
+              <div class="service-content">
+                <h2>Food Service/ Food Runner</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias blanditiis tempore officia accusamus asperiores.
+                  Illum maxime eligendi necessitatibus laudantium iste nisi
+                  pariatur doloremque ut illo similique voluptatum enim
+                  distinctio perferendis, ad ipsam aspernatur omnis rem autem
+                  ex, reiciendis corporis suscipit!
+                </p>
+                <button type="button" class="btn">Know More</button>
+              </div>
+            </article>
+
+            <article class="service">
+              <i class="fa-solid fa-water-ladder service-icon"></i>
+
+              <div class="service-content">
+                <h2>Refreshment</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias blanditiis tempore officia accusamus asperiores.
+                  Illum maxime eligendi necessitatibus laudantium iste nisi
+                  pariatur doloremque ut illo similique voluptatum enim
+                  distinctio perferendis, ad ipsam aspernatur omnis rem autem
+                  ex, reiciendis corporis suscipit!
+                </p>
+                <button type="button" class="btn">Know More</button>
+              </div>
+            </article>
+
+            <article class="service">
+              <i class="fa-solid fa-broom service-icon"></i>
+
+              <div class="service-content">
+                <h2>Housekeeping</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias blanditiis tempore officia accusamus asperiores.
+                  Illum maxime eligendi necessitatibus laudantium iste nisi
+                  pariatur doloremque ut illo similique voluptatum enim
+                  distinctio perferendis, ad ipsam aspernatur omnis rem autem
+                  ex, reiciendis corporis suscipit!
+                </p>
+                <button type="button" class="btn">Know More</button>
+              </div>
+            </article>
+
+            <article class="service">
+              <i class="fa-solid fa-door-closed service-icon"></i>
+
+              <div class="service-content">
+                <h2>Room Security</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Molestias blanditiis tempore officia accusamus asperiores.
+                  Illum maxime eligendi necessitatibus laudantium iste nisi
+                  pariatur doloremque ut illo similique voluptatum enim
+                  distinctio perferendis, ad ipsam aspernatur omnis rem autem
+                  ex, reiciendis corporis suscipit!
+                </p>
+                <button type="button" class="btn">Know More</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer>
       <div class="container">
@@ -217,6 +297,7 @@
       </div>
     </footer>
 
-    <script src="/client/assets/js/hotels.js"></script>
+
+    <script src="./assets/js/aboutHotel.js"></script>
   </body>
 </html>

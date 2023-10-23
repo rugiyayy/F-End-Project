@@ -24,7 +24,7 @@
   </head>
   <body>
 
-    <header>
+    <header id="header">
       <div class="container">
         <div class="header-row">
           <div class="logo">
@@ -60,16 +60,16 @@
             </svg>
           </div>
           <div class="navigation">
-            <nav>
+            <nav class="nav">
               <ul class="nav-ul">
-                <li><a href="./home.html">Explore</a></li>
-                <li><a href="./search.html">Search</a></li>
-                <li><a href="./hotels.html">Hotels</a></li>
+                <li><a class="nav-a" href="./home.html">Explore</a></li>
+                <li><a  class="nav-a" href="./search.html">Search</a></li>
+                <li><a  class="nav-a" href="./hotels.html">Hotels</a></li>
               </ul>
             </nav>
             <i class="fa-solid fa-bars  menu-responsiv"></i>
             <div class="notification">
-              <i class="fa-solid fa-heart"></i><sup>0</sup>
+              <a href="hotels.html#wishlist"><i class="fa-solid fa-heart"></i><sup class="notSuper">0</sup></a>
             </div>
           </div>
         </div>
@@ -88,29 +88,50 @@
           <div class="search-flights">
             <h4 class="">SEARCH FLIGHTS</h4>
             <form class="radio-form" action="">
-              <div class="return-radio"><input type="radio" id="return" name="same" value="return" />
+              <div class="return-radio"><input type="radio" id="return"  name="same" value="return" />
                   <label for="return">Return</label><br /></div>
                
-              <div class="one-way-radio"><input type="radio" id="one-way" name="same" value="one-way" />  
+              <div class="one-way-radio"><input type="radio" id="one-way" checked name="same" value="one-way" />  
                 <label for="one-way">One-way</label><br /></div>
             </form>
-          </div> <form class="search-details-form" action="">
+          </div>
+           <form class="search-details-form" action="">
+           <div class="all-fieldsets">
             <div class="fieldsets">
+              <fieldset>
+                  <legend>Deparutre</legend>
+                  <input required class="departure-inp" name="departure" type="text" />
+                </fieldset>
+    
                 <fieldset>
-                    <legend>Deparutre</legend>
-                    <input type="text" />
-                  </fieldset>
-      
-                  <fieldset>
-                    <legend>Arrival</legend>
-                    <input type="text" />
-                  </fieldset>
-      
-                  <fieldset class="date-fieldset">
-                    <legend>Date</legend>
-                    <input type="date" />
-                  </fieldset>
-            </div>
+                  <legend>Arrival</legend>
+                  <input required class="arrival-inp" name="arrival" type="text" />
+                </fieldset>
+    
+                <fieldset class="date-fieldset">
+                  <legend>Date</legend>
+                  <input required class="date-inp" name="date" type="date" />
+                </fieldset>
+          </div>
+          <i class="fa-solid fa-right-left"></i>
+
+          <div class="fieldsets fieldset-return">
+            <fieldset>
+                <legend>Deparutre</legend>
+                <input  class="departure-inp2" name="departure2" type="text" />
+              </fieldset>
+  
+              <fieldset>
+                <legend>Arrival</legend>
+                <input  class="arrival-inp2" name="arrival2" type="text" />
+              </fieldset>
+  
+              <fieldset class="date-fieldset">
+                <legend>Date</legend>
+                <input  class="date-inp2" name="date2" type="date" />
+              </fieldset>
+        </div>
+           </div>
 
             <button type="submit">SEARCH FLIGHTS</button>
           </form>

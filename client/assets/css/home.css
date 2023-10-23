@@ -5,13 +5,22 @@
 .container {
   max-width: 90%;
   width: 100%;
-  /* width: 1280px; */
-  /* padding: 0 4rem; */
   margin: 0 auto;
-  /* border: 1px solid black; */
 }
 header {
   padding: 16px 0;
+  z-index: 55;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  transition: 0.3s;
+  height: 67px;
+}
+
+.content {
+  margin-top: 67px; /* Отступ сверху, чтобы избежать перекрытия контента заголовком */
 }
 
 .header-row {
@@ -42,6 +51,10 @@ header {
 .notification i {
   font-size: 20px;
   color: red;
+  cursor: pointer;
+}
+.notification sup {
+  color: #1262af;
 }
 
 /* !  BANNER ////////////////////////////////////////////// */
@@ -64,6 +77,7 @@ header {
 .banner-container {
   width: 75%;
   margin: 0 auto;
+  padding: 16px 0;
 }
 .banner-text {
   margin: 24px 0;
@@ -143,11 +157,26 @@ flex-direction: column; */
   align-items: center;
   justify-content: space-between;
 
-  align-items: flex-end;
+  /* align-items: flex-end; */
   column-gap: 12px;
 }
+
+.all-fieldsets {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 20px;
+}
+
+.fieldset-return {
+  display: none !important;
+}
+.all-fieldsets .fa-right-left {
+  text-align: center;
+  display: none;
+}
 .fieldsets {
-  width: 85%;
+  width: 100%;
   display: flex;
   column-gap: 16px;
 }
@@ -342,6 +371,10 @@ flex-direction: column; */
 .destination-box {
   padding: 0 16px;
   width: 25%;
+  transition: 1s;
+}
+.destination-box:hover img{
+  transform: scale(1.1);
 }
 .destination-box img {
   width: 100%;
@@ -420,9 +453,7 @@ flex-direction: column; */
   vertical-align: bottom;
 }
 
-.holiday-box 
-
-.holiday-details {
+.holiday-box .holiday-details {
   padding: 20px 16px;
   border-radius: 0px 0px 10px 10px;
   border: 1px solid #eaeaea;
@@ -732,16 +763,6 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-/* till 250px  */
-
-
 /* ? header */
 @media only screen and (max-width: 992px) {
   .navigation {
@@ -756,10 +777,28 @@ footer {
   .navigation > .menu-responsiv {
     display: block !important;
   }
-  .nav-ul {
-    display: none !important;
+  .navigation .nav {
+    width: 100% !important;
+    display: none !important; 
+    position: absolute;
+    background-color: white;
+    top: 66px;
+    left: 0;
+    text-align: center;
+    padding: 20px;
   }
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 
+  }
+  .nav-ul a{
+    color: #1262af !important;
+    font-weight: 600;
+
+  }
+ 
   .logo svg {
     width: 130px;
   }
@@ -1206,9 +1245,7 @@ footer {
     margin: 0 auto;
   }
 
-
   /* //////////////// */
-
 
   .form-title > h4 {
     line-height: 22px !important;
@@ -1358,8 +1395,6 @@ footer {
     font-size: 12px !important ;
   }
 }
-
-
 
 /* ? footer  */
 

@@ -24,11 +24,12 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+ 
   </head>
   <body>
     <!--! //////////// HEADER///////////////////////// -->
 
-    <header>
+    <header id="header">
       <div class="container">
         <div class="header-row">
           <div class="logo">
@@ -64,16 +65,16 @@
             </svg>
           </div>
           <div class="navigation">
-            <nav>
+            <nav class="nav">
               <ul class="nav-ul">
-                <li><a href="./home.html">Explore</a></li>
-                <li><a href="./search.html">Search</a></li>
-                <li><a href="./hotels.html">Hotels</a></li>
+                <li><a class="nav-a" href="./home.html">Explore</a></li>
+                <li><a  class="nav-a" href="./search.html">Search</a></li>
+                <li><a  class="nav-a" href="./hotels.html">Hotels</a></li>
               </ul>
             </nav>
-            <i class="fa-solid fa-bars menu-responsiv"></i>
+            <i class="fa-solid fa-bars  menu-responsiv"></i>
             <div class="notification">
-              <i class="fa-solid fa-heart"></i><sup>0</sup>
+              <a href="hotels.html#wishlist"><i class="fa-solid fa-heart"></i><sup class="notSuper">0</sup></a>  
             </div>
           </div>
         </div>
@@ -90,17 +91,17 @@
             <div class="fieldsets">
               <fieldset>
                 <legend>Deparutre</legend>
-                <input type="text" placeholder="Singapore (SIN)" />
+                <input required type="text" name="departure" class="departure-inp" />
               </fieldset>
 
               <fieldset>
                 <legend>Arrival</legend>
-                <input type="text" placeholder="Los Angeles (LA)" />
+                <input required type="text" name="arrival" class="arrival-inp" />
               </fieldset>
 
               <fieldset class="date-fieldset">
                 <legend>Date</legend>
-                <input type="date" />
+                <input required type="date" name="date" class="date-inp" />
               </fieldset>
             </div>
 
@@ -220,7 +221,7 @@
 
               <div class="flight-res">
                 <div class="flight-row">
-                  <div class="flight-card-row">
+                  <!-- <div class="flight-card-row">
                     <div class="airport-details">
                       <svg
                         class="a-logo"
@@ -348,787 +349,7 @@
                     </div>
                   </div>
 
-                  <span class="price">$723</span>
-                </div>
-
-                <div class="flight-row">
-                  <div class="flight-card-row">
-                    <div class="airport-details">
-                      <svg
-                        class="a-logo"
-                        width="35"
-                        height="46"
-                        viewBox="0 0 35 46"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M17.3841 8.0842C8.77562 8.0842 1.73065 15.2875 1.73065 24.2577C1.73065 33.2272 8.77625 40.4299 17.3841 40.4299C25.9912 40.4299 33.0362 33.2273 33.0362 24.2577C33.0362 15.2875 25.9905 8.0842 17.3841 8.0842ZM0.17688 24.2577C0.17688 14.5245 7.84162 6.5647 17.3841 6.5647C26.9245 6.5647 34.5899 14.5245 34.5899 24.2577C34.5899 33.9903 26.9252 41.9494 17.3841 41.9494C7.84241 41.9494 0.17688 33.9904 0.17688 24.2577Z"
-                          fill="#CF4037"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M22.3444 20.545C21.5874 15.2975 17.164 12.7065 14.4009 11.1543C11.8366 9.71468 9.54073 9.06049 9.48534 9.22924C12.4019 11.5745 14.2745 15.2281 14.2745 19.3331C14.2745 26.0646 9.23537 31.5836 2.83353 32.0989L3.23831 32.7239C11.434 31.4475 33.3664 27.3758 33.3664 27.3758L33.4246 26.8973L20.1182 26.4417C21.5867 24.8896 22.5923 22.2547 22.3444 20.545Z"
-                          fill="#CF4037"
-                        />
-                      </svg>
-                      <span class="airport"> Turkish Airlines </span>
-                    </div>
-
-                    <div class="flight-details">
-                      <div class="deparutre-details">
-                        <span class="dep-time">11:35 PM</span>
-                        <p class="dep-country">SIN</p>
-                      </div>
-                    </div>
-
-                    <div class="flight-duration">
-                      <div class="destination-icons">
-                        <svg
-                          class="circle left"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-
-                        <svg
-                          class="line"
-                          width="104"
-                          height="2"
-                          viewBox="0 0 104 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.0431824"
-                            y1="0.831543"
-                            x2="103.595"
-                            y2="0.831552"
-                            stroke="#CCCCCC"
-                            stroke-dasharray="3 3"
-                          />
-                        </svg>
-
-                        <svg
-                          class="plane"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="27"
-                          height="24"
-                          viewBox="0 0 27 24"
-                          fill="none"
-                        >
-                          <g clip-path="url(#clip0_1_1373)">
-                            <path
-                              d="M9.62342 21.75H8.25799C8.12079 21.75 7.98579 21.7185 7.86534 21.6585C7.74488 21.5984 7.64282 21.5118 7.56848 21.4064C7.49414 21.301 7.44989 21.1803 7.43979 21.0552C7.42968 20.9302 7.45404 20.8048 7.51064 20.6906L10.817 14.0227L5.85231 13.9219L4.04165 15.9267C3.69644 16.3233 3.42099 16.5 2.71827 16.5H1.79909C1.65355 16.5043 1.50903 16.4764 1.37777 16.4188C1.24652 16.3612 1.13239 16.2755 1.04507 16.1691C0.922989 16.0186 0.802962 15.7636 0.919912 15.3998L1.93655 12.0717C1.94425 12.0469 1.95348 12.022 1.96374 11.9977C1.96425 11.9953 1.96425 11.9929 1.96374 11.9906C1.95315 11.9663 1.94407 11.9414 1.93655 11.9161L0.918886 8.56687C0.808605 8.21016 0.929145 7.96078 1.0502 7.81406C1.13149 7.71549 1.23695 7.63573 1.35811 7.58118C1.47926 7.52664 1.61274 7.49883 1.74779 7.5H2.71827C3.243 7.5 3.75235 7.71516 4.0519 8.0625L5.82513 10.0336L10.817 9.96609L7.51166 3.30984C7.45499 3.19568 7.43054 3.07036 7.44054 2.94533C7.45054 2.8203 7.49467 2.69956 7.56891 2.59414C7.64314 2.48872 7.74511 2.40198 7.86548 2.34186C7.98586 2.28175 8.12081 2.25016 8.25799 2.25H9.6383C9.83087 2.25354 10.0201 2.29667 10.1919 2.3762C10.3637 2.45572 10.5138 2.5696 10.6308 2.70937L17.0451 9.83438L20.0083 9.76312C20.2253 9.75234 20.8265 9.74859 20.9655 9.74859C23.8 9.75 25.4927 10.5909 25.4927 12C25.4927 12.4434 25.2988 13.2656 24.0016 13.7887C23.2357 14.0981 22.214 14.2547 20.9645 14.2547C20.827 14.2547 20.2274 14.2509 20.0073 14.2402L17.0446 14.168L10.6144 21.293C10.4973 21.4321 10.3474 21.5454 10.1758 21.6246C10.0043 21.7037 9.81552 21.7465 9.62342 21.75Z"
-                              fill="#1262AE"
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_1_1373">
-                              <rect
-                                width="26.2624"
-                                height="24"
-                                fill="white"
-                                transform="translate(0.0509949)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-
-                        <svg
-                          class="circle right"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </div>
-                      <div class="duration">33H 10M, 1-stop</div>
-                    </div>
-
-                    <div class="arrival-details">
-                      <span class="arrival-time">4:45 PM</span>
-                      <p class="arrival-country">LAX</p>
-                    </div>
-                  </div>
-
-                  <span class="price">$723</span>
-                </div>
-
-                <div class="flight-row">
-                  <div class="flight-card-row">
-                    <div class="airport-details">
-                      <svg
-                        class="a-logo"
-                        width="35"
-                        height="46"
-                        viewBox="0 0 35 46"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M17.3841 8.0842C8.77562 8.0842 1.73065 15.2875 1.73065 24.2577C1.73065 33.2272 8.77625 40.4299 17.3841 40.4299C25.9912 40.4299 33.0362 33.2273 33.0362 24.2577C33.0362 15.2875 25.9905 8.0842 17.3841 8.0842ZM0.17688 24.2577C0.17688 14.5245 7.84162 6.5647 17.3841 6.5647C26.9245 6.5647 34.5899 14.5245 34.5899 24.2577C34.5899 33.9903 26.9252 41.9494 17.3841 41.9494C7.84241 41.9494 0.17688 33.9904 0.17688 24.2577Z"
-                          fill="#CF4037"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M22.3444 20.545C21.5874 15.2975 17.164 12.7065 14.4009 11.1543C11.8366 9.71468 9.54073 9.06049 9.48534 9.22924C12.4019 11.5745 14.2745 15.2281 14.2745 19.3331C14.2745 26.0646 9.23537 31.5836 2.83353 32.0989L3.23831 32.7239C11.434 31.4475 33.3664 27.3758 33.3664 27.3758L33.4246 26.8973L20.1182 26.4417C21.5867 24.8896 22.5923 22.2547 22.3444 20.545Z"
-                          fill="#CF4037"
-                        />
-                      </svg>
-                      <span class="airport"> Turkish Airlines </span>
-                    </div>
-
-                    <div class="flight-details">
-                      <div class="deparutre-details">
-                        <span class="dep-time">11:35 PM</span>
-                        <p class="dep-country">SIN</p>
-                      </div>
-                    </div>
-
-                    <div class="flight-duration">
-                      <div class="destination-icons">
-                        <svg
-                          class="circle left"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-
-                        <svg
-                          class="line"
-                          width="104"
-                          height="2"
-                          viewBox="0 0 104 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.0431824"
-                            y1="0.831543"
-                            x2="103.595"
-                            y2="0.831552"
-                            stroke="#CCCCCC"
-                            stroke-dasharray="3 3"
-                          />
-                        </svg>
-
-                        <svg
-                          class="plane"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="27"
-                          height="24"
-                          viewBox="0 0 27 24"
-                          fill="none"
-                        >
-                          <g clip-path="url(#clip0_1_1373)">
-                            <path
-                              d="M9.62342 21.75H8.25799C8.12079 21.75 7.98579 21.7185 7.86534 21.6585C7.74488 21.5984 7.64282 21.5118 7.56848 21.4064C7.49414 21.301 7.44989 21.1803 7.43979 21.0552C7.42968 20.9302 7.45404 20.8048 7.51064 20.6906L10.817 14.0227L5.85231 13.9219L4.04165 15.9267C3.69644 16.3233 3.42099 16.5 2.71827 16.5H1.79909C1.65355 16.5043 1.50903 16.4764 1.37777 16.4188C1.24652 16.3612 1.13239 16.2755 1.04507 16.1691C0.922989 16.0186 0.802962 15.7636 0.919912 15.3998L1.93655 12.0717C1.94425 12.0469 1.95348 12.022 1.96374 11.9977C1.96425 11.9953 1.96425 11.9929 1.96374 11.9906C1.95315 11.9663 1.94407 11.9414 1.93655 11.9161L0.918886 8.56687C0.808605 8.21016 0.929145 7.96078 1.0502 7.81406C1.13149 7.71549 1.23695 7.63573 1.35811 7.58118C1.47926 7.52664 1.61274 7.49883 1.74779 7.5H2.71827C3.243 7.5 3.75235 7.71516 4.0519 8.0625L5.82513 10.0336L10.817 9.96609L7.51166 3.30984C7.45499 3.19568 7.43054 3.07036 7.44054 2.94533C7.45054 2.8203 7.49467 2.69956 7.56891 2.59414C7.64314 2.48872 7.74511 2.40198 7.86548 2.34186C7.98586 2.28175 8.12081 2.25016 8.25799 2.25H9.6383C9.83087 2.25354 10.0201 2.29667 10.1919 2.3762C10.3637 2.45572 10.5138 2.5696 10.6308 2.70937L17.0451 9.83438L20.0083 9.76312C20.2253 9.75234 20.8265 9.74859 20.9655 9.74859C23.8 9.75 25.4927 10.5909 25.4927 12C25.4927 12.4434 25.2988 13.2656 24.0016 13.7887C23.2357 14.0981 22.214 14.2547 20.9645 14.2547C20.827 14.2547 20.2274 14.2509 20.0073 14.2402L17.0446 14.168L10.6144 21.293C10.4973 21.4321 10.3474 21.5454 10.1758 21.6246C10.0043 21.7037 9.81552 21.7465 9.62342 21.75Z"
-                              fill="#1262AE"
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_1_1373">
-                              <rect
-                                width="26.2624"
-                                height="24"
-                                fill="white"
-                                transform="translate(0.0509949)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-
-                        <svg
-                          class="circle right"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </div>
-                      <div class="duration">33H 10M, 1-stop</div>
-                    </div>
-
-                    <div class="arrival-details">
-                      <span class="arrival-time">4:45 PM</span>
-                      <p class="arrival-country">LAX</p>
-                    </div>
-                  </div>
-
-                  <span class="price">$723</span>
-                </div>
-
-                <div class="flight-row">
-                  <div class="flight-card-row">
-                    <div class="airport-details">
-                      <svg
-                        class="a-logo"
-                        width="35"
-                        height="46"
-                        viewBox="0 0 35 46"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M17.3841 8.0842C8.77562 8.0842 1.73065 15.2875 1.73065 24.2577C1.73065 33.2272 8.77625 40.4299 17.3841 40.4299C25.9912 40.4299 33.0362 33.2273 33.0362 24.2577C33.0362 15.2875 25.9905 8.0842 17.3841 8.0842ZM0.17688 24.2577C0.17688 14.5245 7.84162 6.5647 17.3841 6.5647C26.9245 6.5647 34.5899 14.5245 34.5899 24.2577C34.5899 33.9903 26.9252 41.9494 17.3841 41.9494C7.84241 41.9494 0.17688 33.9904 0.17688 24.2577Z"
-                          fill="#CF4037"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M22.3444 20.545C21.5874 15.2975 17.164 12.7065 14.4009 11.1543C11.8366 9.71468 9.54073 9.06049 9.48534 9.22924C12.4019 11.5745 14.2745 15.2281 14.2745 19.3331C14.2745 26.0646 9.23537 31.5836 2.83353 32.0989L3.23831 32.7239C11.434 31.4475 33.3664 27.3758 33.3664 27.3758L33.4246 26.8973L20.1182 26.4417C21.5867 24.8896 22.5923 22.2547 22.3444 20.545Z"
-                          fill="#CF4037"
-                        />
-                      </svg>
-                      <span class="airport"> Turkish Airlines </span>
-                    </div>
-
-                    <div class="flight-details">
-                      <div class="deparutre-details">
-                        <span class="dep-time">11:35 PM</span>
-                        <p class="dep-country">SIN</p>
-                      </div>
-                    </div>
-
-                    <div class="flight-duration">
-                      <div class="destination-icons">
-                        <svg
-                          class="circle left"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-
-                        <svg
-                          class="line"
-                          width="104"
-                          height="2"
-                          viewBox="0 0 104 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.0431824"
-                            y1="0.831543"
-                            x2="103.595"
-                            y2="0.831552"
-                            stroke="#CCCCCC"
-                            stroke-dasharray="3 3"
-                          />
-                        </svg>
-
-                        <svg
-                          class="plane"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="27"
-                          height="24"
-                          viewBox="0 0 27 24"
-                          fill="none"
-                        >
-                          <g clip-path="url(#clip0_1_1373)">
-                            <path
-                              d="M9.62342 21.75H8.25799C8.12079 21.75 7.98579 21.7185 7.86534 21.6585C7.74488 21.5984 7.64282 21.5118 7.56848 21.4064C7.49414 21.301 7.44989 21.1803 7.43979 21.0552C7.42968 20.9302 7.45404 20.8048 7.51064 20.6906L10.817 14.0227L5.85231 13.9219L4.04165 15.9267C3.69644 16.3233 3.42099 16.5 2.71827 16.5H1.79909C1.65355 16.5043 1.50903 16.4764 1.37777 16.4188C1.24652 16.3612 1.13239 16.2755 1.04507 16.1691C0.922989 16.0186 0.802962 15.7636 0.919912 15.3998L1.93655 12.0717C1.94425 12.0469 1.95348 12.022 1.96374 11.9977C1.96425 11.9953 1.96425 11.9929 1.96374 11.9906C1.95315 11.9663 1.94407 11.9414 1.93655 11.9161L0.918886 8.56687C0.808605 8.21016 0.929145 7.96078 1.0502 7.81406C1.13149 7.71549 1.23695 7.63573 1.35811 7.58118C1.47926 7.52664 1.61274 7.49883 1.74779 7.5H2.71827C3.243 7.5 3.75235 7.71516 4.0519 8.0625L5.82513 10.0336L10.817 9.96609L7.51166 3.30984C7.45499 3.19568 7.43054 3.07036 7.44054 2.94533C7.45054 2.8203 7.49467 2.69956 7.56891 2.59414C7.64314 2.48872 7.74511 2.40198 7.86548 2.34186C7.98586 2.28175 8.12081 2.25016 8.25799 2.25H9.6383C9.83087 2.25354 10.0201 2.29667 10.1919 2.3762C10.3637 2.45572 10.5138 2.5696 10.6308 2.70937L17.0451 9.83438L20.0083 9.76312C20.2253 9.75234 20.8265 9.74859 20.9655 9.74859C23.8 9.75 25.4927 10.5909 25.4927 12C25.4927 12.4434 25.2988 13.2656 24.0016 13.7887C23.2357 14.0981 22.214 14.2547 20.9645 14.2547C20.827 14.2547 20.2274 14.2509 20.0073 14.2402L17.0446 14.168L10.6144 21.293C10.4973 21.4321 10.3474 21.5454 10.1758 21.6246C10.0043 21.7037 9.81552 21.7465 9.62342 21.75Z"
-                              fill="#1262AE"
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_1_1373">
-                              <rect
-                                width="26.2624"
-                                height="24"
-                                fill="white"
-                                transform="translate(0.0509949)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-
-                        <svg
-                          class="circle right"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </div>
-                      <div class="duration">33H 10M, 1-stop</div>
-                    </div>
-
-                    <div class="arrival-details">
-                      <span class="arrival-time">4:45 PM</span>
-                      <p class="arrival-country">LAX</p>
-                    </div>
-                  </div>
-
-                  <span class="price">$723</span>
-                </div>
-
-                <div class="flight-row">
-                  <div class="flight-card-row">
-                    <div class="airport-details">
-                      <svg
-                        class="a-logo"
-                        width="35"
-                        height="46"
-                        viewBox="0 0 35 46"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M17.3841 8.0842C8.77562 8.0842 1.73065 15.2875 1.73065 24.2577C1.73065 33.2272 8.77625 40.4299 17.3841 40.4299C25.9912 40.4299 33.0362 33.2273 33.0362 24.2577C33.0362 15.2875 25.9905 8.0842 17.3841 8.0842ZM0.17688 24.2577C0.17688 14.5245 7.84162 6.5647 17.3841 6.5647C26.9245 6.5647 34.5899 14.5245 34.5899 24.2577C34.5899 33.9903 26.9252 41.9494 17.3841 41.9494C7.84241 41.9494 0.17688 33.9904 0.17688 24.2577Z"
-                          fill="#CF4037"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M22.3444 20.545C21.5874 15.2975 17.164 12.7065 14.4009 11.1543C11.8366 9.71468 9.54073 9.06049 9.48534 9.22924C12.4019 11.5745 14.2745 15.2281 14.2745 19.3331C14.2745 26.0646 9.23537 31.5836 2.83353 32.0989L3.23831 32.7239C11.434 31.4475 33.3664 27.3758 33.3664 27.3758L33.4246 26.8973L20.1182 26.4417C21.5867 24.8896 22.5923 22.2547 22.3444 20.545Z"
-                          fill="#CF4037"
-                        />
-                      </svg>
-                      <span class="airport"> Turkish Airlines </span>
-                    </div>
-
-                    <div class="flight-details">
-                      <div class="deparutre-details">
-                        <span class="dep-time">11:35 PM</span>
-                        <p class="dep-country">SIN</p>
-                      </div>
-                    </div>
-
-                    <div class="flight-duration">
-                      <div class="destination-icons">
-                        <svg
-                          class="circle left"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-
-                        <svg
-                          class="line"
-                          width="104"
-                          height="2"
-                          viewBox="0 0 104 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.0431824"
-                            y1="0.831543"
-                            x2="103.595"
-                            y2="0.831552"
-                            stroke="#CCCCCC"
-                            stroke-dasharray="3 3"
-                          />
-                        </svg>
-
-                        <svg
-                          class="plane"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="27"
-                          height="24"
-                          viewBox="0 0 27 24"
-                          fill="none"
-                        >
-                          <g clip-path="url(#clip0_1_1373)">
-                            <path
-                              d="M9.62342 21.75H8.25799C8.12079 21.75 7.98579 21.7185 7.86534 21.6585C7.74488 21.5984 7.64282 21.5118 7.56848 21.4064C7.49414 21.301 7.44989 21.1803 7.43979 21.0552C7.42968 20.9302 7.45404 20.8048 7.51064 20.6906L10.817 14.0227L5.85231 13.9219L4.04165 15.9267C3.69644 16.3233 3.42099 16.5 2.71827 16.5H1.79909C1.65355 16.5043 1.50903 16.4764 1.37777 16.4188C1.24652 16.3612 1.13239 16.2755 1.04507 16.1691C0.922989 16.0186 0.802962 15.7636 0.919912 15.3998L1.93655 12.0717C1.94425 12.0469 1.95348 12.022 1.96374 11.9977C1.96425 11.9953 1.96425 11.9929 1.96374 11.9906C1.95315 11.9663 1.94407 11.9414 1.93655 11.9161L0.918886 8.56687C0.808605 8.21016 0.929145 7.96078 1.0502 7.81406C1.13149 7.71549 1.23695 7.63573 1.35811 7.58118C1.47926 7.52664 1.61274 7.49883 1.74779 7.5H2.71827C3.243 7.5 3.75235 7.71516 4.0519 8.0625L5.82513 10.0336L10.817 9.96609L7.51166 3.30984C7.45499 3.19568 7.43054 3.07036 7.44054 2.94533C7.45054 2.8203 7.49467 2.69956 7.56891 2.59414C7.64314 2.48872 7.74511 2.40198 7.86548 2.34186C7.98586 2.28175 8.12081 2.25016 8.25799 2.25H9.6383C9.83087 2.25354 10.0201 2.29667 10.1919 2.3762C10.3637 2.45572 10.5138 2.5696 10.6308 2.70937L17.0451 9.83438L20.0083 9.76312C20.2253 9.75234 20.8265 9.74859 20.9655 9.74859C23.8 9.75 25.4927 10.5909 25.4927 12C25.4927 12.4434 25.2988 13.2656 24.0016 13.7887C23.2357 14.0981 22.214 14.2547 20.9645 14.2547C20.827 14.2547 20.2274 14.2509 20.0073 14.2402L17.0446 14.168L10.6144 21.293C10.4973 21.4321 10.3474 21.5454 10.1758 21.6246C10.0043 21.7037 9.81552 21.7465 9.62342 21.75Z"
-                              fill="#1262AE"
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_1_1373">
-                              <rect
-                                width="26.2624"
-                                height="24"
-                                fill="white"
-                                transform="translate(0.0509949)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-
-                        <svg
-                          class="circle right"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </div>
-                      <div class="duration">33H 10M, 1-stop</div>
-                    </div>
-
-                    <div class="arrival-details">
-                      <span class="arrival-time">4:45 PM</span>
-                      <p class="arrival-country">LAX</p>
-                    </div>
-                  </div>
-
-                  <span class="price">$723</span>
-                </div>
-
-                <div class="flight-row">
-                  <div class="flight-card-row">
-                    <div class="airport-details">
-                      <svg
-                        class="a-logo"
-                        width="35"
-                        height="46"
-                        viewBox="0 0 35 46"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M17.3841 8.0842C8.77562 8.0842 1.73065 15.2875 1.73065 24.2577C1.73065 33.2272 8.77625 40.4299 17.3841 40.4299C25.9912 40.4299 33.0362 33.2273 33.0362 24.2577C33.0362 15.2875 25.9905 8.0842 17.3841 8.0842ZM0.17688 24.2577C0.17688 14.5245 7.84162 6.5647 17.3841 6.5647C26.9245 6.5647 34.5899 14.5245 34.5899 24.2577C34.5899 33.9903 26.9252 41.9494 17.3841 41.9494C7.84241 41.9494 0.17688 33.9904 0.17688 24.2577Z"
-                          fill="#CF4037"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M22.3444 20.545C21.5874 15.2975 17.164 12.7065 14.4009 11.1543C11.8366 9.71468 9.54073 9.06049 9.48534 9.22924C12.4019 11.5745 14.2745 15.2281 14.2745 19.3331C14.2745 26.0646 9.23537 31.5836 2.83353 32.0989L3.23831 32.7239C11.434 31.4475 33.3664 27.3758 33.3664 27.3758L33.4246 26.8973L20.1182 26.4417C21.5867 24.8896 22.5923 22.2547 22.3444 20.545Z"
-                          fill="#CF4037"
-                        />
-                      </svg>
-                      <span class="airport"> Turkish Airlines </span>
-                    </div>
-
-                    <div class="flight-details">
-                      <div class="deparutre-details">
-                        <span class="dep-time">11:35 PM</span>
-                        <p class="dep-country">SIN</p>
-                      </div>
-                    </div>
-
-                    <div class="flight-duration">
-                      <div class="destination-icons">
-                        <svg
-                          class="circle left"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-
-                        <svg
-                          class="line"
-                          width="104"
-                          height="2"
-                          viewBox="0 0 104 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.0431824"
-                            y1="0.831543"
-                            x2="103.595"
-                            y2="0.831552"
-                            stroke="#CCCCCC"
-                            stroke-dasharray="3 3"
-                          />
-                        </svg>
-
-                        <svg
-                          class="plane"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="27"
-                          height="24"
-                          viewBox="0 0 27 24"
-                          fill="none"
-                        >
-                          <g clip-path="url(#clip0_1_1373)">
-                            <path
-                              d="M9.62342 21.75H8.25799C8.12079 21.75 7.98579 21.7185 7.86534 21.6585C7.74488 21.5984 7.64282 21.5118 7.56848 21.4064C7.49414 21.301 7.44989 21.1803 7.43979 21.0552C7.42968 20.9302 7.45404 20.8048 7.51064 20.6906L10.817 14.0227L5.85231 13.9219L4.04165 15.9267C3.69644 16.3233 3.42099 16.5 2.71827 16.5H1.79909C1.65355 16.5043 1.50903 16.4764 1.37777 16.4188C1.24652 16.3612 1.13239 16.2755 1.04507 16.1691C0.922989 16.0186 0.802962 15.7636 0.919912 15.3998L1.93655 12.0717C1.94425 12.0469 1.95348 12.022 1.96374 11.9977C1.96425 11.9953 1.96425 11.9929 1.96374 11.9906C1.95315 11.9663 1.94407 11.9414 1.93655 11.9161L0.918886 8.56687C0.808605 8.21016 0.929145 7.96078 1.0502 7.81406C1.13149 7.71549 1.23695 7.63573 1.35811 7.58118C1.47926 7.52664 1.61274 7.49883 1.74779 7.5H2.71827C3.243 7.5 3.75235 7.71516 4.0519 8.0625L5.82513 10.0336L10.817 9.96609L7.51166 3.30984C7.45499 3.19568 7.43054 3.07036 7.44054 2.94533C7.45054 2.8203 7.49467 2.69956 7.56891 2.59414C7.64314 2.48872 7.74511 2.40198 7.86548 2.34186C7.98586 2.28175 8.12081 2.25016 8.25799 2.25H9.6383C9.83087 2.25354 10.0201 2.29667 10.1919 2.3762C10.3637 2.45572 10.5138 2.5696 10.6308 2.70937L17.0451 9.83438L20.0083 9.76312C20.2253 9.75234 20.8265 9.74859 20.9655 9.74859C23.8 9.75 25.4927 10.5909 25.4927 12C25.4927 12.4434 25.2988 13.2656 24.0016 13.7887C23.2357 14.0981 22.214 14.2547 20.9645 14.2547C20.827 14.2547 20.2274 14.2509 20.0073 14.2402L17.0446 14.168L10.6144 21.293C10.4973 21.4321 10.3474 21.5454 10.1758 21.6246C10.0043 21.7037 9.81552 21.7465 9.62342 21.75Z"
-                              fill="#1262AE"
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_1_1373">
-                              <rect
-                                width="26.2624"
-                                height="24"
-                                fill="white"
-                                transform="translate(0.0509949)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-
-                        <svg
-                          class="circle right"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </div>
-                      <div class="duration">33H 10M, 1-stop</div>
-                    </div>
-
-                    <div class="arrival-details">
-                      <span class="arrival-time">4:45 PM</span>
-                      <p class="arrival-country">LAX</p>
-                    </div>
-                  </div>
-
-                  <span class="price">$723</span>
-                </div>
-
-                <div class="flight-row">
-                  <div class="flight-card-row">
-                    <div class="airport-details">
-                      <svg
-                        class="a-logo"
-                        width="35"
-                        height="46"
-                        viewBox="0 0 35 46"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M17.3841 8.0842C8.77562 8.0842 1.73065 15.2875 1.73065 24.2577C1.73065 33.2272 8.77625 40.4299 17.3841 40.4299C25.9912 40.4299 33.0362 33.2273 33.0362 24.2577C33.0362 15.2875 25.9905 8.0842 17.3841 8.0842ZM0.17688 24.2577C0.17688 14.5245 7.84162 6.5647 17.3841 6.5647C26.9245 6.5647 34.5899 14.5245 34.5899 24.2577C34.5899 33.9903 26.9252 41.9494 17.3841 41.9494C7.84241 41.9494 0.17688 33.9904 0.17688 24.2577Z"
-                          fill="#CF4037"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M22.3444 20.545C21.5874 15.2975 17.164 12.7065 14.4009 11.1543C11.8366 9.71468 9.54073 9.06049 9.48534 9.22924C12.4019 11.5745 14.2745 15.2281 14.2745 19.3331C14.2745 26.0646 9.23537 31.5836 2.83353 32.0989L3.23831 32.7239C11.434 31.4475 33.3664 27.3758 33.3664 27.3758L33.4246 26.8973L20.1182 26.4417C21.5867 24.8896 22.5923 22.2547 22.3444 20.545Z"
-                          fill="#CF4037"
-                        />
-                      </svg>
-                      <span class="airport"> Turkish Airlines </span>
-                    </div>
-
-                    <div class="flight-details">
-                      <div class="deparutre-details">
-                        <span class="dep-time">11:35 PM</span>
-                        <p class="dep-country">SIN</p>
-                      </div>
-                    </div>
-
-                    <div class="flight-duration">
-                      <div class="destination-icons">
-                        <svg
-                          class="circle left"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-
-                        <svg
-                          class="line"
-                          width="104"
-                          height="2"
-                          viewBox="0 0 104 2"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <line
-                            x1="0.0431824"
-                            y1="0.831543"
-                            x2="103.595"
-                            y2="0.831552"
-                            stroke="#CCCCCC"
-                            stroke-dasharray="3 3"
-                          />
-                        </svg>
-
-                        <svg
-                          class="plane"
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="27"
-                          height="24"
-                          viewBox="0 0 27 24"
-                          fill="none"
-                        >
-                          <g clip-path="url(#clip0_1_1373)">
-                            <path
-                              d="M9.62342 21.75H8.25799C8.12079 21.75 7.98579 21.7185 7.86534 21.6585C7.74488 21.5984 7.64282 21.5118 7.56848 21.4064C7.49414 21.301 7.44989 21.1803 7.43979 21.0552C7.42968 20.9302 7.45404 20.8048 7.51064 20.6906L10.817 14.0227L5.85231 13.9219L4.04165 15.9267C3.69644 16.3233 3.42099 16.5 2.71827 16.5H1.79909C1.65355 16.5043 1.50903 16.4764 1.37777 16.4188C1.24652 16.3612 1.13239 16.2755 1.04507 16.1691C0.922989 16.0186 0.802962 15.7636 0.919912 15.3998L1.93655 12.0717C1.94425 12.0469 1.95348 12.022 1.96374 11.9977C1.96425 11.9953 1.96425 11.9929 1.96374 11.9906C1.95315 11.9663 1.94407 11.9414 1.93655 11.9161L0.918886 8.56687C0.808605 8.21016 0.929145 7.96078 1.0502 7.81406C1.13149 7.71549 1.23695 7.63573 1.35811 7.58118C1.47926 7.52664 1.61274 7.49883 1.74779 7.5H2.71827C3.243 7.5 3.75235 7.71516 4.0519 8.0625L5.82513 10.0336L10.817 9.96609L7.51166 3.30984C7.45499 3.19568 7.43054 3.07036 7.44054 2.94533C7.45054 2.8203 7.49467 2.69956 7.56891 2.59414C7.64314 2.48872 7.74511 2.40198 7.86548 2.34186C7.98586 2.28175 8.12081 2.25016 8.25799 2.25H9.6383C9.83087 2.25354 10.0201 2.29667 10.1919 2.3762C10.3637 2.45572 10.5138 2.5696 10.6308 2.70937L17.0451 9.83438L20.0083 9.76312C20.2253 9.75234 20.8265 9.74859 20.9655 9.74859C23.8 9.75 25.4927 10.5909 25.4927 12C25.4927 12.4434 25.2988 13.2656 24.0016 13.7887C23.2357 14.0981 22.214 14.2547 20.9645 14.2547C20.827 14.2547 20.2274 14.2509 20.0073 14.2402L17.0446 14.168L10.6144 21.293C10.4973 21.4321 10.3474 21.5454 10.1758 21.6246C10.0043 21.7037 9.81552 21.7465 9.62342 21.75Z"
-                              fill="#1262AE"
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_1_1373">
-                              <rect
-                                width="26.2624"
-                                height="24"
-                                fill="white"
-                                transform="translate(0.0509949)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-
-                        <svg
-                          class="circle right"
-                          width="11"
-                          height="11"
-                          viewBox="0 0 11 11"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <circle
-                            id="Ellipse 18"
-                            cx="5.30197"
-                            cy="5.33154"
-                            r="4"
-                            fill="white"
-                            stroke="#1262AE"
-                            stroke-width="2"
-                          />
-                        </svg>
-                      </div>
-                      <div class="duration">33H 10M, 1-stop</div>
-                    </div>
-
-                    <div class="arrival-details">
-                      <span class="arrival-time">4:45 PM</span>
-                      <p class="arrival-country">LAX</p>
-                    </div>
-                  </div>
-
-                  <span class="price">$723</span>
+                  <span class="price">$723</span> -->
                 </div>
               </div>
 
@@ -1177,87 +398,89 @@
           </form>
         </div>
       </section>
+    </main>
 
-      <!-- ! footer -->
+    <!-- ! footer -->
 
-      <footer>
-        <div class="container">
-          <div class="footer-row">
-            <div class="footer-info col-6">
-              <a class="logo" href="">
-                <svg
-                  width="174"
-                  height="34"
-                  viewBox="0 0 174 34"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_1_1642)">
-                    <path
-                      d="M129.851 8.44574C131.214 8.44574 132.452 8.61913 133.564 8.96592C134.676 9.31271 135.615 9.76114 136.38 10.3112C136.858 10.646 137.235 11.0167 137.51 11.4233C137.785 11.8299 137.923 12.3561 137.923 13.0018V25.5578L137.917 25.8993C137.877 27.0229 137.64 28.0033 137.205 28.8404C136.727 29.7611 136.075 30.5265 135.25 31.1363C134.425 31.7462 133.456 32.1946 132.344 32.4816C131.232 32.7686 130.042 32.9121 128.775 32.9121C126.598 32.9121 124.888 32.6191 123.645 32.0332C122.401 31.4472 121.779 30.4966 121.779 29.1812C121.779 28.6311 121.893 28.1468 122.12 27.7283C122.347 27.3097 122.604 26.9928 122.891 26.7776C123.585 27.1602 124.368 27.4831 125.241 27.7462C126.114 28.0093 127.017 28.1408 127.95 28.1408C129.241 28.1408 130.269 27.9256 131.035 27.4951C131.8 27.0646 132.183 26.371 132.183 25.4144V24.8404L131.91 24.9524C130.983 25.3082 129.878 25.4861 128.595 25.4861C127.519 25.4861 126.497 25.3247 125.528 25.0018C124.559 24.6789 123.71 24.1767 122.981 23.4951C122.251 22.8135 121.665 21.9345 121.223 20.8583C120.781 19.7821 120.559 18.5025 120.559 17.0197C120.559 15.5608 120.793 14.2933 121.259 13.217C121.725 12.1408 122.371 11.2499 123.196 10.5444C124.021 9.83887 125.002 9.31271 126.138 8.96592C127.274 8.61913 128.512 8.44574 129.851 8.44574ZM33.2869 9.00266C35.4197 9.00266 37.165 9.48124 38.5227 10.4384C39.8804 11.3956 40.6841 13.0862 40.9338 15.5103H36.3769L36.3333 15.2422C36.2301 14.7135 36.0313 14.2306 35.737 13.7937C35.2377 13.107 34.4626 12.7637 33.4118 12.7637C31.9136 12.7637 30.8888 13.5076 30.3374 14.9953C30.0461 15.786 29.9004 16.8368 29.9004 18.1477C29.9004 19.3962 30.0461 20.4002 30.3374 21.1597C30.868 22.5746 31.8668 23.2821 33.3337 23.2821C34.3741 23.2821 35.1128 23.0011 35.5498 22.4393C35.9867 21.8775 36.252 21.1492 36.3457 20.2545H40.887L40.8561 20.5653C40.7054 21.8035 40.2267 22.9795 39.42 24.0936C38.0259 26.0391 35.9607 27.0119 33.2245 27.0119C30.4883 27.0119 28.4751 26.2004 27.185 24.5773C25.8949 22.9543 25.2499 20.8475 25.2499 18.257C25.2499 15.3335 25.9626 13.0602 27.3879 11.4372C28.8132 9.81417 30.7796 9.00266 33.2869 9.00266ZM74.6185 8.95584C76.0334 8.95584 77.3079 9.22114 78.4419 9.75174C79.5759 10.2823 80.5123 11.1199 81.251 12.2643C81.9168 13.2735 82.3486 14.4439 82.5462 15.7756C82.6607 16.5559 82.7075 17.6795 82.6867 19.1465H71.0447L71.0606 19.4423C71.1718 20.9917 71.7023 22.0896 72.6521 22.7358C73.2659 23.1624 74.0046 23.3757 74.8681 23.3757C75.7837 23.3757 76.5276 23.1156 77.0998 22.5954C77.4119 22.3145 77.6876 21.9243 77.9269 21.425H82.4682L82.4345 21.6581C82.2705 22.5919 81.7563 23.5389 80.892 24.4993C79.4355 26.1535 77.3963 26.9806 74.7745 26.9806C72.6105 26.9806 70.7014 26.2836 69.0471 24.8895C67.3929 23.4953 66.5658 21.2273 66.5658 18.0853C66.5658 15.141 67.3123 12.8833 68.8053 11.3123C70.2982 9.74134 72.236 8.95584 74.6185 8.95584ZM105.848 2.70583C106.374 2.70583 106.846 2.74171 107.265 2.81345C107.683 2.8852 108.036 3.0287 108.323 3.24395C108.61 3.45919 108.831 3.75217 108.987 4.12287C109.142 4.49357 109.22 4.97788 109.22 5.57579V26.383L109.099 26.4046C108.843 26.45 108.495 26.5085 108.054 26.5803C107.54 26.664 107.019 26.7058 106.493 26.7058C105.967 26.7058 105.495 26.67 105.076 26.5982C104.658 26.5265 104.305 26.383 104.018 26.1677C103.731 25.9525 103.51 25.6595 103.354 25.2888C103.199 24.9181 103.121 24.4338 103.121 23.8359V3.0287L103.242 3.0071C103.498 2.96171 103.846 2.90314 104.287 2.83139C104.801 2.74768 105.321 2.70583 105.848 2.70583ZM115.015 8.91211C115.541 8.91211 116.014 8.94798 116.432 9.01973C116.851 9.09148 117.203 9.23498 117.49 9.45023C117.777 9.66547 117.999 9.95845 118.154 10.3292C118.31 10.6999 118.387 11.1842 118.387 11.7821V26.383L118.267 26.4046C118.011 26.45 117.662 26.5085 117.221 26.5803C116.707 26.664 116.187 26.7058 115.661 26.7058C115.135 26.7058 114.662 26.67 114.244 26.5982C113.825 26.5265 113.473 26.383 113.186 26.1677C112.899 25.9525 112.677 25.6595 112.522 25.2888C112.366 24.9181 112.289 24.4338 112.289 23.8359V9.23498L112.409 9.21338C112.665 9.16799 113.014 9.10942 113.455 9.03767C113.969 8.95396 114.489 8.91211 115.015 8.91211ZM143.574 2.70583C144.101 2.70583 144.573 2.74171 144.991 2.81345C145.41 2.8852 145.763 3.0287 146.05 3.24395C146.337 3.45919 146.558 3.75217 146.713 4.12287C146.869 4.49357 146.947 4.97788 146.947 5.57579V9.09148L147.071 9.0458C147.378 8.93724 147.809 8.81495 148.364 8.67893C148.997 8.52347 149.697 8.44574 150.462 8.44574C152.83 8.44574 154.678 9.03767 156.005 10.2215C157.332 11.4054 157.996 13.1692 157.996 15.513V26.383L157.885 26.4137C157.646 26.4752 157.307 26.5367 156.866 26.5982C156.352 26.67 155.82 26.7058 155.27 26.7058C154.743 26.7058 154.271 26.67 153.852 26.5982C153.434 26.5265 153.081 26.383 152.794 26.1677C152.507 25.9525 152.286 25.6595 152.131 25.2888C151.975 24.9181 151.897 24.4338 151.897 23.8359V15.8718L151.893 15.6507C151.858 14.7871 151.614 14.1732 151.162 13.809C150.672 13.4144 150.068 13.217 149.35 13.217C148.872 13.217 148.417 13.2768 147.987 13.3964C147.557 13.516 147.21 13.6595 146.947 13.8269V26.383L146.836 26.4137C146.597 26.4752 146.257 26.5367 145.817 26.5982C145.302 26.67 144.77 26.7058 144.22 26.7058C143.694 26.7058 143.222 26.67 142.803 26.5982C142.385 26.5265 142.032 26.383 141.745 26.1677C141.458 25.9525 141.237 25.6595 141.081 25.2888C140.926 24.9181 140.848 24.4338 140.848 23.8359V3.0287L140.968 3.0071C141.225 2.96171 141.573 2.90314 142.014 2.83139C142.528 2.74768 143.048 2.70583 143.574 2.70583ZM100.626 4.67893L100.708 4.81794C100.843 5.06208 100.965 5.36851 101.075 5.73722C101.206 6.17967 101.272 6.64006 101.272 7.11839C101.272 8.05112 101.075 8.7148 100.68 9.10942C100.285 9.50404 99.7533 9.70135 99.0836 9.70135H91.55V13.7552H99.4065L99.4997 13.8937C99.6508 14.1362 99.7812 14.4368 99.8908 14.7955C100.022 15.226 100.088 15.6804 100.088 16.1587C100.088 17.0676 99.8908 17.7193 99.4962 18.1139C99.1016 18.5085 98.5694 18.7058 97.8998 18.7058H91.6217V26.2753L91.4998 26.3061C91.2377 26.3676 90.8658 26.4291 90.3841 26.4906C89.822 26.5623 89.266 26.5982 88.7159 26.5982C88.1658 26.5982 87.6815 26.5564 87.263 26.4726C86.8445 26.3889 86.4917 26.2395 86.2047 26.0242C85.9177 25.809 85.7025 25.51 85.559 25.1274C85.4155 24.7447 85.3437 24.2425 85.3437 23.6206V8.01525L85.3499 7.76263C85.3956 6.85282 85.6925 6.12387 86.2406 5.57579C86.8385 4.97788 87.6516 4.67893 88.68 4.67893H100.626ZM16.3082 3.44696V7.48889H4.7754V12.7793H14.8724V16.7744H4.7754V26.4188H0V3.44696H16.3082ZM22.8234 9.40841V26.4188H18.3133V9.40841H22.8234ZM47.4022 3.49378V15.8849L52.9423 9.48644H58.4512L52.5054 15.9941L58.6853 26.4188H53.3169L49.2437 19.1465L47.4022 21.066V26.4188H43.0326V3.49378H47.4022ZM64.4827 3.41575V26.4188H60.035V3.41575H64.4827ZM158.328 4.53139C159.074 4.3072 160.346 4.25733 161.836 4.91605C163.339 5.58103 164.277 6.72162 164.649 8.33783L172.721 9.02385C172.821 9.02965 172.92 9.0499 173.019 9.0846C173.167 9.13666 173.247 9.20989 173.314 9.26723C173.478 9.4078 173.531 9.51619 173.609 9.71028C173.748 10.0554 173.706 10.4616 173.525 10.7401C173.233 11.1892 172.777 11.4797 172.156 11.6118L165.639 12.9968L166.79 18.4084C166.922 19.0296 167.213 19.4298 167.663 19.6088C168.113 19.7878 168.696 19.8011 169.413 19.6488C169.772 19.5726 170.135 19.464 170.505 19.323C170.875 19.182 171.193 19.0333 171.459 18.8768C171.73 19.0939 171.977 19.3472 172.201 19.6367C172.425 19.9263 172.585 20.298 172.682 20.752C173.038 22.4301 170.397 24.0155 168.666 24.3267C167.062 24.6148 164.602 24.8542 163.195 21.1695C161.789 17.4848 159.58 11.3083 157.894 6.16111C157.748 5.71692 157.658 5.28065 157.814 4.92065C157.899 4.72606 157.96 4.64207 158.328 4.53139ZM130.138 13.217C128.966 13.217 128.087 13.5459 127.501 14.2036C126.915 14.8613 126.622 15.8 126.622 17.0197C126.622 18.4069 126.915 19.4054 127.501 20.0152C128.087 20.6251 128.834 20.93 129.743 20.93C130.724 20.93 131.501 20.7028 132.075 20.2484V13.6475L131.965 13.5901C131.806 13.5136 131.598 13.4371 131.34 13.3605C131.017 13.2649 130.616 13.217 130.138 13.217ZM74.6185 12.6232C73.5885 12.6232 72.79 12.9458 72.2229 13.5908C71.6559 14.2358 71.2996 15.1098 71.1539 16.2126H78.0674C77.9945 15.0369 77.6382 14.1448 76.9984 13.5362C76.3585 12.9275 75.5652 12.6232 74.6185 12.6232ZM22.8234 3.2753V7.37965H18.3133V3.2753H22.8234ZM115.338 0.912109C116.342 0.912109 117.15 1.22302 117.76 1.84484C118.369 2.46667 118.674 3.23199 118.674 4.14081C118.674 5.04963 118.369 5.81495 117.76 6.43677C117.15 7.0586 116.342 7.36951 115.338 7.36951C114.334 7.36951 113.526 7.0586 112.916 6.43677C112.307 5.81495 112.002 5.04963 112.002 4.14081C112.002 3.23199 112.307 2.46667 112.916 1.84484C113.526 1.22302 114.334 0.912109 115.338 0.912109Z"
+    <footer>
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-info col-6">
+            <a class="logo" href="">
+              <svg
+                width="174"
+                height="34"
+                viewBox="0 0 174 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_1_1642)">
+                  <path
+                    d="M129.851 8.44574C131.214 8.44574 132.452 8.61913 133.564 8.96592C134.676 9.31271 135.615 9.76114 136.38 10.3112C136.858 10.646 137.235 11.0167 137.51 11.4233C137.785 11.8299 137.923 12.3561 137.923 13.0018V25.5578L137.917 25.8993C137.877 27.0229 137.64 28.0033 137.205 28.8404C136.727 29.7611 136.075 30.5265 135.25 31.1363C134.425 31.7462 133.456 32.1946 132.344 32.4816C131.232 32.7686 130.042 32.9121 128.775 32.9121C126.598 32.9121 124.888 32.6191 123.645 32.0332C122.401 31.4472 121.779 30.4966 121.779 29.1812C121.779 28.6311 121.893 28.1468 122.12 27.7283C122.347 27.3097 122.604 26.9928 122.891 26.7776C123.585 27.1602 124.368 27.4831 125.241 27.7462C126.114 28.0093 127.017 28.1408 127.95 28.1408C129.241 28.1408 130.269 27.9256 131.035 27.4951C131.8 27.0646 132.183 26.371 132.183 25.4144V24.8404L131.91 24.9524C130.983 25.3082 129.878 25.4861 128.595 25.4861C127.519 25.4861 126.497 25.3247 125.528 25.0018C124.559 24.6789 123.71 24.1767 122.981 23.4951C122.251 22.8135 121.665 21.9345 121.223 20.8583C120.781 19.7821 120.559 18.5025 120.559 17.0197C120.559 15.5608 120.793 14.2933 121.259 13.217C121.725 12.1408 122.371 11.2499 123.196 10.5444C124.021 9.83887 125.002 9.31271 126.138 8.96592C127.274 8.61913 128.512 8.44574 129.851 8.44574ZM33.2869 9.00266C35.4197 9.00266 37.165 9.48124 38.5227 10.4384C39.8804 11.3956 40.6841 13.0862 40.9338 15.5103H36.3769L36.3333 15.2422C36.2301 14.7135 36.0313 14.2306 35.737 13.7937C35.2377 13.107 34.4626 12.7637 33.4118 12.7637C31.9136 12.7637 30.8888 13.5076 30.3374 14.9953C30.0461 15.786 29.9004 16.8368 29.9004 18.1477C29.9004 19.3962 30.0461 20.4002 30.3374 21.1597C30.868 22.5746 31.8668 23.2821 33.3337 23.2821C34.3741 23.2821 35.1128 23.0011 35.5498 22.4393C35.9867 21.8775 36.252 21.1492 36.3457 20.2545H40.887L40.8561 20.5653C40.7054 21.8035 40.2267 22.9795 39.42 24.0936C38.0259 26.0391 35.9607 27.0119 33.2245 27.0119C30.4883 27.0119 28.4751 26.2004 27.185 24.5773C25.8949 22.9543 25.2499 20.8475 25.2499 18.257C25.2499 15.3335 25.9626 13.0602 27.3879 11.4372C28.8132 9.81417 30.7796 9.00266 33.2869 9.00266ZM74.6185 8.95584C76.0334 8.95584 77.3079 9.22114 78.4419 9.75174C79.5759 10.2823 80.5123 11.1199 81.251 12.2643C81.9168 13.2735 82.3486 14.4439 82.5462 15.7756C82.6607 16.5559 82.7075 17.6795 82.6867 19.1465H71.0447L71.0606 19.4423C71.1718 20.9917 71.7023 22.0896 72.6521 22.7358C73.2659 23.1624 74.0046 23.3757 74.8681 23.3757C75.7837 23.3757 76.5276 23.1156 77.0998 22.5954C77.4119 22.3145 77.6876 21.9243 77.9269 21.425H82.4682L82.4345 21.6581C82.2705 22.5919 81.7563 23.5389 80.892 24.4993C79.4355 26.1535 77.3963 26.9806 74.7745 26.9806C72.6105 26.9806 70.7014 26.2836 69.0471 24.8895C67.3929 23.4953 66.5658 21.2273 66.5658 18.0853C66.5658 15.141 67.3123 12.8833 68.8053 11.3123C70.2982 9.74134 72.236 8.95584 74.6185 8.95584ZM105.848 2.70583C106.374 2.70583 106.846 2.74171 107.265 2.81345C107.683 2.8852 108.036 3.0287 108.323 3.24395C108.61 3.45919 108.831 3.75217 108.987 4.12287C109.142 4.49357 109.22 4.97788 109.22 5.57579V26.383L109.099 26.4046C108.843 26.45 108.495 26.5085 108.054 26.5803C107.54 26.664 107.019 26.7058 106.493 26.7058C105.967 26.7058 105.495 26.67 105.076 26.5982C104.658 26.5265 104.305 26.383 104.018 26.1677C103.731 25.9525 103.51 25.6595 103.354 25.2888C103.199 24.9181 103.121 24.4338 103.121 23.8359V3.0287L103.242 3.0071C103.498 2.96171 103.846 2.90314 104.287 2.83139C104.801 2.74768 105.321 2.70583 105.848 2.70583ZM115.015 8.91211C115.541 8.91211 116.014 8.94798 116.432 9.01973C116.851 9.09148 117.203 9.23498 117.49 9.45023C117.777 9.66547 117.999 9.95845 118.154 10.3292C118.31 10.6999 118.387 11.1842 118.387 11.7821V26.383L118.267 26.4046C118.011 26.45 117.662 26.5085 117.221 26.5803C116.707 26.664 116.187 26.7058 115.661 26.7058C115.135 26.7058 114.662 26.67 114.244 26.5982C113.825 26.5265 113.473 26.383 113.186 26.1677C112.899 25.9525 112.677 25.6595 112.522 25.2888C112.366 24.9181 112.289 24.4338 112.289 23.8359V9.23498L112.409 9.21338C112.665 9.16799 113.014 9.10942 113.455 9.03767C113.969 8.95396 114.489 8.91211 115.015 8.91211ZM143.574 2.70583C144.101 2.70583 144.573 2.74171 144.991 2.81345C145.41 2.8852 145.763 3.0287 146.05 3.24395C146.337 3.45919 146.558 3.75217 146.713 4.12287C146.869 4.49357 146.947 4.97788 146.947 5.57579V9.09148L147.071 9.0458C147.378 8.93724 147.809 8.81495 148.364 8.67893C148.997 8.52347 149.697 8.44574 150.462 8.44574C152.83 8.44574 154.678 9.03767 156.005 10.2215C157.332 11.4054 157.996 13.1692 157.996 15.513V26.383L157.885 26.4137C157.646 26.4752 157.307 26.5367 156.866 26.5982C156.352 26.67 155.82 26.7058 155.27 26.7058C154.743 26.7058 154.271 26.67 153.852 26.5982C153.434 26.5265 153.081 26.383 152.794 26.1677C152.507 25.9525 152.286 25.6595 152.131 25.2888C151.975 24.9181 151.897 24.4338 151.897 23.8359V15.8718L151.893 15.6507C151.858 14.7871 151.614 14.1732 151.162 13.809C150.672 13.4144 150.068 13.217 149.35 13.217C148.872 13.217 148.417 13.2768 147.987 13.3964C147.557 13.516 147.21 13.6595 146.947 13.8269V26.383L146.836 26.4137C146.597 26.4752 146.257 26.5367 145.817 26.5982C145.302 26.67 144.77 26.7058 144.22 26.7058C143.694 26.7058 143.222 26.67 142.803 26.5982C142.385 26.5265 142.032 26.383 141.745 26.1677C141.458 25.9525 141.237 25.6595 141.081 25.2888C140.926 24.9181 140.848 24.4338 140.848 23.8359V3.0287L140.968 3.0071C141.225 2.96171 141.573 2.90314 142.014 2.83139C142.528 2.74768 143.048 2.70583 143.574 2.70583ZM100.626 4.67893L100.708 4.81794C100.843 5.06208 100.965 5.36851 101.075 5.73722C101.206 6.17967 101.272 6.64006 101.272 7.11839C101.272 8.05112 101.075 8.7148 100.68 9.10942C100.285 9.50404 99.7533 9.70135 99.0836 9.70135H91.55V13.7552H99.4065L99.4997 13.8937C99.6508 14.1362 99.7812 14.4368 99.8908 14.7955C100.022 15.226 100.088 15.6804 100.088 16.1587C100.088 17.0676 99.8908 17.7193 99.4962 18.1139C99.1016 18.5085 98.5694 18.7058 97.8998 18.7058H91.6217V26.2753L91.4998 26.3061C91.2377 26.3676 90.8658 26.4291 90.3841 26.4906C89.822 26.5623 89.266 26.5982 88.7159 26.5982C88.1658 26.5982 87.6815 26.5564 87.263 26.4726C86.8445 26.3889 86.4917 26.2395 86.2047 26.0242C85.9177 25.809 85.7025 25.51 85.559 25.1274C85.4155 24.7447 85.3437 24.2425 85.3437 23.6206V8.01525L85.3499 7.76263C85.3956 6.85282 85.6925 6.12387 86.2406 5.57579C86.8385 4.97788 87.6516 4.67893 88.68 4.67893H100.626ZM16.3082 3.44696V7.48889H4.7754V12.7793H14.8724V16.7744H4.7754V26.4188H0V3.44696H16.3082ZM22.8234 9.40841V26.4188H18.3133V9.40841H22.8234ZM47.4022 3.49378V15.8849L52.9423 9.48644H58.4512L52.5054 15.9941L58.6853 26.4188H53.3169L49.2437 19.1465L47.4022 21.066V26.4188H43.0326V3.49378H47.4022ZM64.4827 3.41575V26.4188H60.035V3.41575H64.4827ZM158.328 4.53139C159.074 4.3072 160.346 4.25733 161.836 4.91605C163.339 5.58103 164.277 6.72162 164.649 8.33783L172.721 9.02385C172.821 9.02965 172.92 9.0499 173.019 9.0846C173.167 9.13666 173.247 9.20989 173.314 9.26723C173.478 9.4078 173.531 9.51619 173.609 9.71028C173.748 10.0554 173.706 10.4616 173.525 10.7401C173.233 11.1892 172.777 11.4797 172.156 11.6118L165.639 12.9968L166.79 18.4084C166.922 19.0296 167.213 19.4298 167.663 19.6088C168.113 19.7878 168.696 19.8011 169.413 19.6488C169.772 19.5726 170.135 19.464 170.505 19.323C170.875 19.182 171.193 19.0333 171.459 18.8768C171.73 19.0939 171.977 19.3472 172.201 19.6367C172.425 19.9263 172.585 20.298 172.682 20.752C173.038 22.4301 170.397 24.0155 168.666 24.3267C167.062 24.6148 164.602 24.8542 163.195 21.1695C161.789 17.4848 159.58 11.3083 157.894 6.16111C157.748 5.71692 157.658 5.28065 157.814 4.92065C157.899 4.72606 157.96 4.64207 158.328 4.53139ZM130.138 13.217C128.966 13.217 128.087 13.5459 127.501 14.2036C126.915 14.8613 126.622 15.8 126.622 17.0197C126.622 18.4069 126.915 19.4054 127.501 20.0152C128.087 20.6251 128.834 20.93 129.743 20.93C130.724 20.93 131.501 20.7028 132.075 20.2484V13.6475L131.965 13.5901C131.806 13.5136 131.598 13.4371 131.34 13.3605C131.017 13.2649 130.616 13.217 130.138 13.217ZM74.6185 12.6232C73.5885 12.6232 72.79 12.9458 72.2229 13.5908C71.6559 14.2358 71.2996 15.1098 71.1539 16.2126H78.0674C77.9945 15.0369 77.6382 14.1448 76.9984 13.5362C76.3585 12.9275 75.5652 12.6232 74.6185 12.6232ZM22.8234 3.2753V7.37965H18.3133V3.2753H22.8234ZM115.338 0.912109C116.342 0.912109 117.15 1.22302 117.76 1.84484C118.369 2.46667 118.674 3.23199 118.674 4.14081C118.674 5.04963 118.369 5.81495 117.76 6.43677C117.15 7.0586 116.342 7.36951 115.338 7.36951C114.334 7.36951 113.526 7.0586 112.916 6.43677C112.307 5.81495 112.002 5.04963 112.002 4.14081C112.002 3.23199 112.307 2.46667 112.916 1.84484C113.526 1.22302 114.334 0.912109 115.338 0.912109Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_1642">
+                    <rect
+                      width="174"
+                      height="33"
                       fill="white"
+                      transform="translate(0 0.386719)"
                     />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_1642">
-                      <rect
-                        width="174"
-                        height="33"
-                        fill="white"
-                        transform="translate(0 0.386719)"
-                      />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-              <p>
-                Fickle Flight is your one-stop travel portal. We offer hassle
-                free flight and hotel bookings. We also have all your flight
-                needs in you online shop.
-              </p>
-              <div class="social-media">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-twitter"></i></a>
-              </div>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <p>
+              Fickle Flight is your one-stop travel portal. We offer hassle free
+              flight and hotel bookings. We also have all your flight needs in
+              you online shop.
+            </p>
+            <div class="social-media">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
             </div>
+          </div>
 
-            <div class="footer-links col-6">
-              <div class="links-row">
-                <div class="links col-4">
-                  <h4>Copmany</h4>
-                  <ul>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">News</a></li>
-                    <li><a href="">Careers</a></li>
-                    <li><a href="">How we work</a></li>
-                  </ul>
-                </div>
+          <div class="footer-links col-6">
+            <div class="links-row">
+              <div class="links col-4">
+                <h4>Copmany</h4>
+                <ul>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">News</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">How we work</a></li>
+                </ul>
+              </div>
 
-                <div class="links col-4">
-                  <h4>Support</h4>
-                  <ul>
-                    <li><a href="">Account</a></li>
-                    <li><a href="">Support Center</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Accessibility</a></li>
-                  </ul>
-                </div>
+              <div class="links col-4">
+                <h4>Support</h4>
+                <ul>
+                  <li><a href="">Account</a></li>
+                  <li><a href="">Support Center</a></li>
+                  <li><a href="">FAQ</a></li>
+                  <li><a href="">Accessibility</a></li>
+                </ul>
+              </div>
 
-                <div class="links col-4">
-                  <h4>More</h4>
-                  <ul>
-                    <li><a href="">Covid Advisory</a></li>
-                    <li><a href="">Airline Fees</a></li>
-                    <li><a href="">Tips</a></li>
-                    <li><a href="">Quarantine Rules</a></li>
-                  </ul>
-                </div>
+              <div class="links col-4">
+                <h4>More</h4>
+                <ul>
+                  <li><a href="">Covid Advisory</a></li>
+                  <li><a href="">Airline Fees</a></li>
+                  <li><a href="">Tips</a></li>
+                  <li><a href="">Quarantine Rules</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
+
+    <script src="./assets/js/search.js"></script>
   </body>
 </html>

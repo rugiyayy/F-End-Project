@@ -12,6 +12,14 @@
 }
 header {
   padding: 16px 0;
+  z-index: 55;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  transition: 0.3s;
+  height: 67px;
 }
 
 .header-row {
@@ -245,7 +253,7 @@ header {
 }
 .flight-res {
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   row-gap: 20px;
 }
 .flight-row {
@@ -559,10 +567,28 @@ footer {
   .navigation > .menu-responsiv {
     display: block !important;
   }
-  .nav-ul {
-    display: none !important;
+  .navigation .nav {
+    width: 100% !important;
+    display: none ; 
+    position: absolute;
+    background-color: white;
+    top: 66px;
+    left: 0;
+    text-align: center;
+    padding: 20px;
   }
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 
+  }
+  .nav-ul a{
+    color: #1262af !important;
+    font-weight: 600;
+
+  }
+ 
   .logo svg {
     width: 130px;
   }
@@ -749,6 +775,26 @@ footer {
     height: 40px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ? main */
 /* * last section */
