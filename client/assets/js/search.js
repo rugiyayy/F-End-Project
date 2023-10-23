@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", async function () {
                   i
                 ].$.FLSDepartureDateTime.slice(11, 16)}</span>
                 <p class="dep-country">${
-                  data.OTA_AirDetailsRS.FlightDetails[i].$.FLSDepartureName
+                  data.OTA_AirDetailsRS.FlightDetails[i].$.FLSDepartureName.replace("Airport", "")
                 }</p>
               </div>
             </div>

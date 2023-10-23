@@ -224,11 +224,14 @@ flex-direction: column; */
   text-align: center;
 
   font-family: "Roboto", sans-serif;
-
+cursor: pointer;
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.46px;
 }
+.search-details-form > button:hover{
+  background-color: #b36e07;}
+
 
 /*!     section recent flights////////////////////////////////////////////////////////////////////// */
 
@@ -372,9 +375,6 @@ flex-direction: column; */
   padding: 0 16px;
   width: 25%;
   transition: 1s;
-}
-.destination-box:hover img{
-  transform: scale(1.1);
 }
 .destination-box img {
   width: 100%;
@@ -611,6 +611,11 @@ flex-direction: column; */
   padding: 12px 0;
   text-align: center;
   letter-spacing: 0.5px;
+  transition: .4s;
+}
+.btn-hotel-dtl:hover{
+  background-color:#1262ae;
+  color: white;
 }
 
 /* ! ///////////////////////////////////      SUBSCRIBE */
@@ -762,6 +767,12 @@ footer {
   font-weight: 300;
 }
 
+.subscribe button {
+  transition: .2s;
+}
+.subscribe button:hover{
+  background-color: #b36e07;
+}
 
 /* ? header */
 @media only screen and (max-width: 992px) {
@@ -838,11 +849,11 @@ footer {
   .search-details-form > button {
     display: inline-block;
     height: 42px;
-
     font-size: 12px;
     padding: 0 4px;
     letter-spacing: 0.4px;
   }
+ 
 
   /*  * //// section 1  part 2  next trip planning */
   .destionation-details > .price {

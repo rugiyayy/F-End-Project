@@ -98,7 +98,7 @@ async function ListHotelsPop() {
               <span class="rating"><i class="fa-solid fa-star"></i>${hotels.review.stars}</span>
               <span class="review">(${hotels.review.comments} reviews)</span>
           </div>
-          <button class="btn-hotel-dtl">MORE DETAILS</button>
+          <a href="./aboutHotel.html" class="btn-hotel-dtl">MORE DETAILS</a>
           </div>
       </div>`;
       });
@@ -170,17 +170,15 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
-
 // ! nav
 
 let respMenu = document.querySelector(".menu-responsiv");
 let nav = document.querySelector(".nav");
 
-respMenu.addEventListener("click", function() {
+respMenu.addEventListener("click", function () {
   if (nav.style.display === "block") {
     nav.style.display = "none";
-} else {
+  } else {
     nav.style.display = "block";
-}
+  }
 });

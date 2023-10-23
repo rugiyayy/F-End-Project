@@ -167,6 +167,10 @@ header {
   font-size: 15px;
   font-weight: 500;
   letter-spacing: 0.46px;
+  transition: 0.4s;
+}
+.search-details-form > button:hover {
+  background-color: #b36e07;
 }
 
 /* ! ///////////////////////////  search results section {1} */
@@ -273,7 +277,6 @@ header {
   display: flex;
   justify-content: space-between !important;
   align-items: center;
-  /* column-gap: 30px; */
 }
 
 .airport-details {
@@ -373,8 +376,7 @@ header {
   font-weight: 700;
   letter-spacing: 0.64px;
 }
-/* .advertisement > svg {
-} */
+
 .advertisement > p {
   color: #000;
   font-family: "Roboto", sans-serif;
@@ -397,7 +399,13 @@ header {
   text-align: center;
   font-size: 18px;
   font-weight: 500;
+  transition: 0.3s;
   letter-spacing: 0.7px;
+}
+
+.result > button:hover {
+  cursor:not-allowed;
+  background-color: #094c8c;
 }
 
 /* ? ///////////////     SUBSCRIBE */
@@ -548,7 +556,12 @@ footer {
   font-size: 16px;
   font-weight: 300;
 }
-
+.subscribe button {
+  transition: 0.4s;
+}
+.subscribe button:hover {
+  background-color: #b36e07;
+}
 /* ! mediaaa */
 
 /* ? header */
@@ -569,7 +582,7 @@ footer {
   }
   .navigation .nav {
     width: 100% !important;
-    display: none ; 
+    display: none;
     position: absolute;
     background-color: white;
     top: 66px;
@@ -581,14 +594,12 @@ footer {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-
   }
-  .nav-ul a{
+  .nav-ul a {
     color: #1262af !important;
     font-weight: 600;
-
   }
- 
+
   .logo svg {
     width: 130px;
   }
@@ -775,26 +786,6 @@ footer {
     height: 40px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ? main */
 /* * last section */
@@ -1082,8 +1073,6 @@ footer {
   }
   .filters-aside {
     width: 100% !important;
-    /* display: flex; */
-    /* flex-direction: row; */
   }
   .number_of_results {
     color: #0b5ba8 !important;
@@ -1094,8 +1083,7 @@ footer {
 
   .filters {
     flex-direction: row !important;
-    /* column-gap: 20px !important; */
-    /* gap: 28px; */
+
     justify-content: space-between !important;
     flex-wrap: wrap !important;
   }
@@ -1106,14 +1094,6 @@ footer {
     width: 30% !important;
   }
 
-  .filters-aside svg {
-    /* display: none !important; */
-  }
-  .line-hr {
-    /* width: 300px !important; */
-    /* height: 1.3vh !important; */
-    /* display: none; */
-  }
   .filters > svg {
     display: none;
   }
@@ -1158,12 +1138,8 @@ footer {
   }
 
   .filters {
-    /* text-align: center; */
     justify-content: space-between !important;
     flex-wrap: wrap !important;
-    /* width: 75% !important ; */
-    /* margin: 0 auto; */
-    /* border: 1px solid red; */
   }
   .stops > h5,
   .booking > h5,
@@ -1220,10 +1196,9 @@ footer {
   }
 }
 @media only screen and (max-width: 500px) {
-.result>button{
+  .result > button {
     width: 50% !important;
-}
-    
+  }
 }
 
 @media only screen and (max-width: 360px) {
@@ -1242,8 +1217,7 @@ footer {
     transform: translateX(-50%);
     row-gap: 0 !important;
   }
-  .result>button{
+  .result > button {
     width: 70% !important;
-}
-
+  }
 }
